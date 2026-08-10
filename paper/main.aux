@@ -1,0 +1,62 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{eu2024espr}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{section.1}\protected@file@percent }
+\citation{liu2024lost}
+\citation{olausson2023linc}
+\citation{pan2023logiclm}
+\citation{elyaniv2010foundations}
+\citation{guo2017calibration}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Related Work}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {III}Fusion Depth and Evaluation Design}{2}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Three depths}{2}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Why a verified evaluation set}{2}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Configurations}{2}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Results}{2}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}A trade-off, not a ranking}{2}{subsection.4.1}\protected@file@percent }
+\citation{openfoodfacts}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Accuracy on the same 6{,}270{} verified questions, grouped by fusion depth. Best baseline per column in bold. The three published systems are within 2.11{} points overall, but no one of them is best at more than one depth.}}{3}{table.1}\protected@file@percent }
+\newlabel{tab:main}{{I}{3}{Accuracy on the same \VerifiedN {} verified questions, grouped by fusion depth. Best baseline per column in bold. The three published systems are within \SpreadOverall {} points overall, but no one of them is best at more than one depth}{table.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Accuracy against fusion depth. The lines cross. Systems that combine evidence loosely are strong where the answer is a stated value and weak where a rule must be applied; the system that formalises every question is the reverse.}}{3}{figure.1}\protected@file@percent }
+\newlabel{fig:bytype}{{1}{3}{Accuracy against fusion depth. The lines cross. Systems that combine evidence loosely are strong where the answer is a stated value and weak where a rule must be applied; the system that formalises every question is the reverse}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Selective fusion pays no penalty here}{3}{subsection.4.2}\protected@file@percent }
+\newlabel{sec:paired}{{\mbox  {IV-B}}{3}{Selective fusion pays no penalty here}{subsection.4.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Knowing when the sources are not enough}{3}{subsection.4.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces One worked example per question class, quoted from the released per-question outputs. A tick marks the recorded verdict; wrong answers are set in italic. None of these failures is a fluency failure: every wrong answer is well formed and plausible, and each substitutes the system's own prior for what the record states. Answers in the depth-aware column also carry the identifier of the record they were drawn from, omitted here for width. The first three rows are from the verified subset; the fourth is from a separate compositional evaluation, on which LINC was not run. That answer has three components and the systems differ on exactly one, shown in bold, so the cell lists the three components rather than the full sentence.}}{4}{table.2}\protected@file@percent }
+\newlabel{tab:examples}{{II}{4}{One worked example per question class, quoted from the released per-question outputs. A tick marks the recorded verdict; wrong answers are set in italic. None of these failures is a fluency failure: every wrong answer is well formed and plausible, and each substitutes the system's own prior for what the record states. Answers in the depth-aware column also carry the identifier of the record they were drawn from, omitted here for width. The first three rows are from the verified subset; the fourth is from a separate compositional evaluation, on which LINC was not run. That answer has three components and the systems differ on exactly one, shown in bold, so the cell lists the three components rather than the full sentence}{table.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Accuracy by industrial domain, ordered by the share of rule-governed questions each domain carries. Baseline accuracy falls as that share rises; the ordering is recomputed from the artifacts on every build.}}{4}{table.3}\protected@file@percent }
+\newlabel{tab:domain}{{III}{4}{Accuracy by industrial domain, ordered by the share of rule-governed questions each domain carries. Baseline accuracy falls as that share rises; the ordering is recomputed from the artifacts on every build}{table.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Paired disagreement. The right-hand column is zero for every baseline: no baseline answers correctly a question the fused configuration misses.}}{4}{table.4}\protected@file@percent }
+\newlabel{tab:mcnemar}{{IV}{4}{Paired disagreement. The right-hand column is zero for every baseline: no baseline answers correctly a question the fused configuration misses}{table.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Public-schema arm by query type. Where the underlying fields are sparsely populated there is little to combine, and the system lowers coverage rather than guessing.}}{4}{table.5}\protected@file@percent }
+\newlabel{tab:off}{{V}{4}{Public-schema arm by query type. Where the underlying fields are sparsely populated there is little to combine, and the system lowers coverage rather than guessing}{table.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}What This Shows, and What It Does Not}{4}{section.5}\protected@file@percent }
+\newlabel{sec:limits}{{V}{4}{What This Shows, and What It Does Not}{section.5}{}}
+\bibstyle{IEEEtran}
+\bibdata{refs}
+\bibcite{eu2024espr}{1}
+\bibcite{liu2024lost}{2}
+\bibcite{olausson2023linc}{3}
+\bibcite{pan2023logiclm}{4}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion}{5}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{5}{section*.4}\protected@file@percent }
+\bibcite{elyaniv2010foundations}{5}
+\bibcite{guo2017calibration}{6}
+\bibcite{openfoodfacts}{7}
+\gdef \@abspage@last{6}

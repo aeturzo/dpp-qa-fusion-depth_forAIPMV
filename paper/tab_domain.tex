@@ -1,0 +1,19 @@
+\begin{table}[t]
+\caption{Accuracy by industrial domain, ordered by the share of rule-governed questions each domain carries. Baseline accuracy falls as that share rises; the ordering is recomputed from the artifacts on every build.}
+\label{tab:domain}
+\centering\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lccc}
+\toprule
+configuration & battery & lexmark & viessmann \\
+\midrule
+rule-governed share (\%) & 53.9 & 45.7 & 33.3 \\
+\midrule
+LongCtx & 93.70 & 96.82 & 97.75 \\
+LINC & 93.77 & 92.56 & 97.60 \\
+LogicLM & 94.25 & 97.56 & 97.79 \\
+\midrule
+fused + selective & 100.00 & 100.00 & 100.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

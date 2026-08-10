@@ -1,0 +1,54 @@
+% Fallback bibliography, in citation order, matching refs.bib.
+% Overleaf has IEEEtran.bst and will regenerate this file from refs.bib on
+% build; it is committed here so the paper also compiles where that style is
+% unavailable.
+\begin{thebibliography}{10}
+
+\bibitem{eu2024espr}
+European Parliament and Council of the European Union,
+\newblock ``Regulation (EU) 2024/1781 establishing a framework for the setting
+  of ecodesign requirements for sustainable products,''
+\newblock {\em Official Journal of the European Union}, L 2024/1781, 2024.
+\newblock Digital Product Passport provisions.
+
+\bibitem{liu2024lost}
+N.~F. Liu, K.~Lin, J.~Hewitt, A.~Paranjape, M.~Bevilacqua, F.~Petroni, and
+  P.~Liang,
+\newblock ``Lost in the middle: How language models use long contexts,''
+\newblock {\em Transactions of the Association for Computational Linguistics},
+  vol.~12, pp.~157--173, 2024.
+
+\bibitem{olausson2023linc}
+T.~X. Olausson, A.~Gu, B.~Lipkin, C.~E. Zhang, A.~Solar-Lezama, J.~B. Tenenbaum,
+  and R.~Levy,
+\newblock ``{LINC}: A neurosymbolic approach for logical reasoning by combining
+  language models with first-order logic provers,''
+\newblock in {\em Proc. 2023 Conf. Empirical Methods in Natural Language
+  Processing (EMNLP)}, pp.~5153--5176, 2023.
+
+\bibitem{pan2023logiclm}
+L.~Pan, A.~Albalak, X.~Wang, and W.~Y. Wang,
+\newblock ``{Logic-LM}: Empowering large language models with symbolic solvers
+  for faithful logical reasoning,''
+\newblock in {\em Findings of the Association for Computational Linguistics:
+  EMNLP 2023}, pp.~3806--3824, 2023.
+
+\bibitem{elyaniv2010foundations}
+R.~El-Yaniv and Y.~Wiener,
+\newblock ``On the foundations of noise-free selective classification,''
+\newblock {\em Journal of Machine Learning Research}, vol.~11, no.~53,
+  pp.~1605--1641, 2010.
+
+\bibitem{guo2017calibration}
+C.~Guo, G.~Pleiss, Y.~Sun, and K.~Q. Weinberger,
+\newblock ``On calibration of modern neural networks,''
+\newblock in {\em Proc. 34th Int. Conf. Machine Learning (ICML)}, vol.~70 of
+  {\em PMLR}, pp.~1321--1330, 2017.
+
+\bibitem{openfoodfacts}
+Open Food Facts contributors,
+\newblock ``Open Food Facts: a free, open database of food products,'' 2026.
+\newblock \url{https://world.openfoodfacts.org/data}, product data under the
+  Open Database License.
+
+\end{thebibliography}
