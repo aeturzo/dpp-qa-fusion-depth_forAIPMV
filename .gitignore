@@ -16,3 +16,5 @@ env/
 *.bbl
 *.blg
 *.synctex.gz
+publish.sh
+publish_artifact.sh
