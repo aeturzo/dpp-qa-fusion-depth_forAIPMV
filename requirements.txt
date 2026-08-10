@@ -1,0 +1,3 @@
+# Only pandas is needed. Versions are lower bounds, not pins: the scripts use
+# stable API only, and verify_all.py will tell you immediately if anything drifts.
+pandas>=1.5

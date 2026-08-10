@@ -1,0 +1,19 @@
+\begin{table}[t]
+\caption{Public-schema arm by query type. Where the underlying fields are sparsely populated there is little to combine, and the system lowers coverage rather than guessing.}
+\label{tab:off}
+\centering\footnotesize
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{lcccc}
+\toprule
+query type & $n$ & accuracy & coverage & ECE \\
+\midrule
+nutrition & 1450 & 100.00 & 69.6 & 0.004 \\
+missingness & 367 & 92.92 & 100.0 & 0.071 \\
+attribute & 1146 & 99.83 & 99.8 & 0.002 \\
+sustainability & 1039 & 91.92 & 38.0 & 0.060 \\
+fairness & 19 & 100.00 & 100.0 & 0.000 \\
+\midrule
+all & 4021 & 97.21 & 73.0 & 0.021 \\
+\bottomrule
+\end{tabular}
+\end{table}

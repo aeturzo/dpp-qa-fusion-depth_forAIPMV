@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite the paper below."
+title: "Fusion depth in Digital Product Passport question answering: data and verification code"
+abstract: >-
+  Released per-question results for 6,270 verified product-record questions
+  across four question-answering configurations, a 4,021-query arm over a public
+  product schema, and scripts that recompute every number reported in the
+  accompanying paper.
+authors:
+  - family-names: "Esfar-E-Alam"
+    given-names: "A M"
+    affiliation: "Department of Informatics, University of Oslo, Norway"
+    email: "aeturzo@uio.no"
+  - family-names: "Taherkordi"
+    given-names: "Amir"
+    affiliation: "Department of Informatics, University of Oslo, Norway"
+license: MIT
+repository-code: "https://github.com/aeturzo/dpp-qa-fusion-depth"
+keywords:
+  - intelligent data fusion
+  - digital product passport
+  - question answering
+  - selective prediction
+  - benchmark construction
+preferred-citation:
+  type: conference-paper
+  title: "Finding Evidence Is Solved, Combining It Is Not: A Fusion-Depth Analysis of Question Answering over Digital Product Passports"
+  authors:
+    - family-names: "Esfar-E-Alam"
+      given-names: "A M"
+    - family-names: "Taherkordi"
+      given-names: "Amir"
+  collection-title: "2026 International Conference on Artificial Intelligence, Photoelectric Materials and Vision (AIPMV)"
+  year: 2026

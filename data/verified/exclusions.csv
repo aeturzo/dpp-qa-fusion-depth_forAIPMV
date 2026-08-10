@@ -1,0 +1,646 @@
+id,domain,type,reason,expected_contains,query
+battery.kb.logic.00755,battery,logic,logic_class_not_derivable,Component,Is Battery1 a Component?
+battery.kb.logic.01106,battery,logic,logic_class_not_derivable,Component,Is WirelessModule1 a Component?
+battery.kb.logic.01491,battery,logic,logic_class_not_derivable,Component,Is WirelessModule2 a Component?
+battery.kb.recall.00020,battery,recall,kb_conflicting_entity_relation,3.7 V,What is the voltage of LiCell-064?
+battery.kb.recall.00021,battery,recall,kb_gold_not_uniquely_supported,Product,What is the domain of hasComponent?
+battery.kb.recall.00022,battery,recall,kb_conflicting_entity_relation,18 V,What is the voltage of LiCell-007?
+battery.kb.recall.00023,battery,recall,kb_conflicting_entity_relation,QuickMount,What is the compatible accessory of LiCell-027?
+battery.kb.recall.00024,battery,recall,kb_conflicting_entity_relation,BMS-Guard,What is the compatible accessory of LiCell-025?
+battery.kb.recall.00025,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-038?
+battery.kb.recall.00026,battery,recall,kb_conflicting_entity_relation,QuickMount,What is the compatible accessory of LiCell-014?
+battery.kb.recall.00029,battery,recall,kb_conflicting_entity_relation,NanoVolt,What is the manufacturer of LiCell-067?
+battery.kb.recall.00033,battery,recall,kb_conflicting_entity_relation,NanoVolt,What is the manufacturer of LiCell-032?
+battery.kb.recall.00034,battery,recall,kb_conflicting_entity_relation,VoltMax,What is the manufacturer of LiCell-018?
+battery.kb.recall.00037,battery,recall,kb_conflicting_entity_relation,VoltMax,What is the manufacturer of LiCell-073?
+battery.kb.recall.00038,battery,recall,kb_conflicting_entity_relation,CellTech,What is the manufacturer of LiCell-039?
+battery.kb.recall.00039,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-017?
+battery.kb.recall.00040,battery,recall,kb_conflicting_entity_relation,7.4 V,What is the voltage of LiCell-005?
+battery.kb.recall.00045,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-006?
+battery.kb.recall.00046,battery,recall,kb_conflicting_entity_relation,QuickMount,What is the compatible accessory of LiCell-045?
+battery.kb.recall.00048,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-032?
+battery.kb.recall.00050,battery,recall,kb_conflicting_entity_relation,VoltMax,What is the manufacturer of LiCell-061?
+battery.kb.recall.00051,battery,recall,kb_conflicting_entity_relation,3500 mAh,What is the capacity of LiCell-064?
+battery.kb.recall.00052,battery,recall,kb_conflicting_entity_relation,CellTech,What is the manufacturer of LiCell-062?
+battery.kb.recall.00058,battery,recall,kb_conflicting_entity_relation,NanoVolt,What is the manufacturer of LiCell-056?
+battery.kb.recall.00059,battery,recall,kb_conflicting_entity_relation,NanoVolt,What is the manufacturer of LiCell-007?
+battery.kb.recall.00060,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-063?
+battery.kb.recall.00061,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-077?
+battery.kb.recall.00063,battery,recall,kb_conflicting_entity_relation,CellTech,What is the manufacturer of LiCell-009?
+battery.kb.recall.00064,battery,recall,kb_conflicting_entity_relation,QuickMount,What is the compatible accessory of LiCell-041?
+battery.kb.recall.00065,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-042?
+battery.kb.recall.00066,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-008?
+battery.kb.recall.00067,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-026?
+battery.kb.recall.00068,battery,recall,kb_conflicting_entity_relation,PowerCore,What is the manufacturer of LiCell-057?
+battery.kb.recall.00069,battery,recall,kb_conflicting_entity_relation,NanoVolt,What is the manufacturer of LiCell-065?
+battery.kb.recall.00070,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-015?
+battery.kb.recall.00071,battery,recall,kb_conflicting_entity_relation,NanoVolt,What is the manufacturer of LiCell-033?
+battery.kb.recall.00073,battery,recall,kb_conflicting_entity_relation,CellTech,What is the manufacturer of LiCell-014?
+battery.kb.recall.00075,battery,recall,kb_conflicting_entity_relation,BMS-Guard,What is the compatible accessory of LiCell-031?
+battery.kb.recall.00077,battery,recall,kb_gold_not_uniquely_supported,capacity,What is the range of capacity?
+battery.kb.recall.00078,battery,recall,kb_gold_not_uniquely_supported,Standard,What is the range of conformsTo?
+battery.kb.recall.00081,battery,recall,kb_conflicting_entity_relation,7.4 V,What is the voltage of LiCell-009?
+battery.kb.recall.00082,battery,recall,kb_conflicting_entity_relation,VoltMax,What is the manufacturer of LiCell-020?
+battery.kb.recall.00084,battery,recall,kb_conflicting_entity_relation,VoltMax,What is the manufacturer of LiCell-068?
+battery.kb.recall.00088,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-041?
+battery.kb.recall.00093,battery,recall,kb_gold_not_uniquely_supported,Product,What is the domain of compatible accessory?
+battery.kb.recall.00094,battery,recall,kb_conflicting_entity_relation,NanoVolt,What is the manufacturer of LiCell-027?
+battery.kb.recall.00095,battery,recall,kb_conflicting_entity_relation,2200 mAh,What is the capacity of LiCell-017?
+battery.kb.recall.00096,battery,recall,kb_conflicting_entity_relation,Case-Pro,What is the compatible accessory of LiCell-004?
+battery.kb.recall.00097,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-063?
+battery.kb.recall.00098,battery,recall,kb_conflicting_entity_relation,QuickMount,What is the compatible accessory of LiCell-054?
+battery.kb.recall.00099,battery,recall,kb_conflicting_entity_relation,QuickMount,What is the compatible accessory of LiCell-069?
+battery.kb.recall.00101,battery,recall,kb_conflicting_entity_relation,Case-Pro,What is the compatible accessory of LiCell-009?
+battery.kb.recall.00103,battery,recall,kb_gold_not_uniquely_supported,hasSpec,What is the subPropertyOf of capacity?
+battery.kb.recall.00105,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-010?
+battery.kb.recall.00106,battery,recall,kb_conflicting_entity_relation,NanoVolt,What is the manufacturer of LiCell-010?
+battery.kb.recall.00108,battery,recall,kb_conflicting_entity_relation,VoltMax,What is the manufacturer of LiCell-002?
+battery.kb.recall.00109,battery,recall,kb_conflicting_entity_relation,BMS-Guard,What is the compatible accessory of LiCell-065?
+battery.kb.recall.00110,battery,recall,kb_conflicting_entity_relation,Case-Pro,What is the compatible accessory of LiCell-039?
+battery.kb.recall.00111,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-057?
+battery.kb.recall.00115,battery,recall,kb_conflicting_entity_relation,VoltMax,What is the manufacturer of LiCell-028?
+battery.kb.recall.00116,battery,recall,kb_conflicting_entity_relation,7.4 V,What is the voltage of LiCell-057?
+battery.kb.recall.00118,battery,recall,kb_conflicting_entity_relation,Energen,What is the manufacturer of LiCell-069?
+battery.kb.recall.00120,battery,recall,kb_gold_not_uniquely_supported,Product,What is the domain of manufacturer?
+battery.kb.recall.00128,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-038?
+battery.kb.recall.00129,battery,recall,kb_conflicting_entity_relation,Case-Pro,What is the compatible accessory of LiCell-058?
+battery.kb.recall.00130,battery,recall,kb_conflicting_entity_relation,FuseKit,What is the compatible accessory of LiCell-064?
+battery.kb.recall.00131,battery,recall,kb_gold_not_uniquely_supported,Product,What is the domain of hasStep?
+battery.kb.recall.00133,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-076?
+battery.kb.recall.00138,battery,recall,kb_gold_not_uniquely_supported,Product,What is the subClassOf of accessory?
+battery.kb.recall.00139,battery,recall,kb_conflicting_entity_relation,PowerCore,What is the manufacturer of LiCell-023?
+battery.kb.recall.00141,battery,recall,kb_gold_not_uniquely_supported,StepA_Assembly,What is the hasStep of ProductA?
+battery.kb.recall.00143,battery,recall,kb_conflicting_entity_relation,CellTech,What is the manufacturer of LiCell-063?
+battery.kb.recall.00149,battery,recall,kb_conflicting_entity_relation,3500 mAh,What is the capacity of LiCell-018?
+battery.kb.recall.00151,battery,recall,kb_conflicting_entity_relation,18 V,What is the voltage of LiCell-028?
+battery.kb.recall.00154,battery,recall,kb_conflicting_entity_relation,Energen,What is the manufacturer of LiCell-050?
+battery.kb.recall.00158,battery,recall,kb_gold_not_uniquely_supported,StepB_Assembly,What is the hasStep of ProductB?
+battery.kb.recall.00160,battery,recall,kb_conflicting_entity_relation,Case-Pro,What is the compatible accessory of LiCell-020?
+battery.kb.recall.00162,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-052?
+battery.kb.recall.00164,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-076?
+battery.kb.recall.00165,battery,recall,kb_conflicting_entity_relation,VoltMax,What is the manufacturer of LiCell-051?
+battery.kb.recall.00166,battery,recall,kb_conflicting_entity_relation,18 V,What is the voltage of LiCell-041?
+battery.kb.recall.00167,battery,recall,kb_conflicting_entity_relation,NanoVolt,What is the manufacturer of LiCell-077?
+battery.kb.recall.00168,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-056?
+battery.kb.recall.00170,battery,recall,kb_conflicting_entity_relation,CellTech,What is the manufacturer of LiCell-029?
+battery.kb.recall.00171,battery,recall,kb_conflicting_entity_relation,BMS-Guard,What is the compatible accessory of LiCell-075?
+battery.kb.recall.00172,battery,recall,kb_conflicting_entity_relation,BMS-Guard,What is the compatible accessory of LiCell-050?
+battery.kb.recall.00174,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-011?
+battery.kb.recall.00175,battery,recall,kb_gold_not_uniquely_supported,hasSpec,What is the subPropertyOf of voltage?
+battery.kb.recall.00176,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-007?
+battery.kb.recall.00179,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-047?
+battery.kb.recall.00180,battery,recall,kb_conflicting_entity_relation,Case-Pro,What is the compatible accessory of LiCell-074?
+battery.kb.recall.00182,battery,recall,kb_conflicting_entity_relation,PowerCore,What is the manufacturer of LiCell-046?
+battery.kb.recall.00183,battery,recall,kb_conflicting_entity_relation,7.4 V,What is the voltage of LiCell-036?
+battery.kb.recall.00185,battery,recall,kb_gold_not_uniquely_supported,LeadMaterial,What is the usesMaterial of Board2?
+battery.kb.recall.00186,battery,recall,kb_conflicting_entity_relation,FuseKit,What is the compatible accessory of LiCell-053?
+battery.kb.recall.00187,battery,recall,kb_gold_not_uniquely_supported,Standard,What is the range of requiresCompliance?
+battery.kb.recall.00188,battery,recall,kb_gold_not_uniquely_supported,WirelessTestStep,What is the hasStep of ProductC?
+battery.kb.recall.00193,battery,recall,kb_conflicting_entity_relation,3.7 V,What is the voltage of LiCell-023?
+battery.kb.recall.00195,battery,recall,kb_conflicting_entity_relation,NanoVolt,What is the manufacturer of LiCell-017?
+battery.kb.recall.00200,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-046?
+battery.kb.recall.00201,battery,recall,kb_conflicting_entity_relation,2200 mAh,What is the capacity of LiCell-007?
+battery.kb.recall.00204,battery,recall,kb_conflicting_entity_relation,CellTech,What is the manufacturer of LiCell-043?
+battery.kb.recall.00206,battery,recall,kb_conflicting_entity_relation,Energen,What is the manufacturer of LiCell-079?
+battery.kb.recall.00207,battery,recall,kb_conflicting_entity_relation,4000 mAh,What is the capacity of LiCell-079?
+battery.kb.recall.00208,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-070?
+battery.kb.recall.00210,battery,recall,kb_conflicting_entity_relation,Energen,What is the manufacturer of LiCell-000?
+battery.kb.recall.00212,battery,recall,kb_conflicting_entity_relation,Case-Pro,What is the compatible accessory of LiCell-022?
+battery.kb.recall.00213,battery,recall,kb_conflicting_entity_relation,BMS-Guard,What is the compatible accessory of LiCell-063?
+battery.kb.recall.00216,battery,recall,kb_conflicting_entity_relation,3500 mAh,What is the capacity of LiCell-070?
+battery.kb.recall.00219,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-029?
+battery.kb.recall.00221,battery,recall,kb_conflicting_entity_relation,7.4 V,What is the voltage of LiCell-058?
+battery.kb.recall.00223,battery,recall,kb_conflicting_entity_relation,1800 mAh,What is the capacity of LiCell-050?
+battery.kb.recall.00228,battery,recall,kb_conflicting_entity_relation,Case-Pro,What is the compatible accessory of LiCell-002?
+battery.kb.recall.00231,battery,recall,kb_conflicting_entity_relation,CellTech,What is the manufacturer of LiCell-042?
+battery.kb.recall.00233,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-033?
+battery.kb.recall.00235,battery,recall,kb_gold_not_uniquely_supported,ProcessStep,What is the range of requiresStep?
+battery.kb.recall.00237,battery,recall,kb_conflicting_entity_relation,Case-Pro,What is the compatible accessory of LiCell-008?
+battery.kb.recall.00240,battery,recall,kb_gold_not_uniquely_supported,Board2,What is the hasComponent of ProductB?
+battery.kb.recall.00241,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-073?
+battery.kb.recall.00243,battery,recall,kb_conflicting_entity_relation,1800 mAh,What is the capacity of LiCell-026?
+battery.kb.recall.00244,battery,recall,kb_conflicting_entity_relation,PowerCore,What is the manufacturer of LiCell-037?
+battery.kb.recall.00245,battery,recall,kb_conflicting_entity_relation,3.7 V,What is the voltage of LiCell-078?
+battery.kb.recall.00246,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-023?
+battery.kb.recall.00247,battery,recall,kb_gold_not_uniquely_supported,Product,What is the domain of hasSpec?
+battery.kb.recall.00249,battery,recall,kb_conflicting_entity_relation,3500 mAh,What is the capacity of LiCell-000?
+battery.kb.recall.00250,battery,recall,kb_conflicting_entity_relation,PowerCore,What is the manufacturer of LiCell-041?
+battery.kb.recall.00253,battery,recall,kb_conflicting_entity_relation,Case-Pro,What is the compatible accessory of LiCell-059?
+battery.kb.recall.00255,battery,recall,kb_conflicting_entity_relation,BMS-Guard,What is the compatible accessory of LiCell-026?
+battery.kb.recall.00260,battery,recall,kb_conflicting_entity_relation,VoltMax,What is the manufacturer of LiCell-071?
+battery.kb.recall.00261,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-067?
+battery.kb.recall.00263,battery,recall,kb_conflicting_entity_relation,2200 mAh,What is the capacity of LiCell-062?
+battery.kb.recall.00265,battery,recall,kb_conflicting_entity_relation,Case-Pro,What is the compatible accessory of LiCell-070?
+battery.kb.recall.00267,battery,recall,kb_conflicting_entity_relation,7.4 V,What is the voltage of LiCell-018?
+battery.kb.recall.00269,battery,recall,kb_conflicting_entity_relation,Energen,What is the manufacturer of LiCell-006?
+battery.kb.recall.00272,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-005?
+battery.kb.recall.00281,battery,recall,kb_conflicting_entity_relation,PowerCore,What is the manufacturer of LiCell-075?
+battery.kb.recall.00284,battery,recall,kb_conflicting_entity_relation,2500 mAh,What is the capacity of LiCell-027?
+battery.kb.recall.00286,battery,recall,kb_conflicting_entity_relation,1800 mAh,What is the capacity of LiCell-019?
+battery.kb.recall.00291,battery,recall,kb_conflicting_entity_relation,VoltMax,What is the manufacturer of LiCell-021?
+battery.kb.recall.00292,battery,recall,kb_conflicting_entity_relation,18 V,What is the voltage of LiCell-035?
+battery.kb.recall.00296,battery,recall,kb_gold_not_uniquely_supported,EN 62133-2,What is the requiresCompliance of ProductA?
+battery.kb.recall.00298,battery,recall,kb_conflicting_entity_relation,BMS-Guard,What is the compatible accessory of LiCell-010?
+battery.kb.recall.00299,battery,recall,kb_conflicting_entity_relation,QuickMount,What is the compatible accessory of LiCell-029?
+battery.kb.recall.00301,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-013?
+battery.kb.recall.00302,battery,recall,kb_conflicting_entity_relation,QuickMount,What is the compatible accessory of LiCell-035?
+battery.kb.recall.00304,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-014?
+battery.kb.recall.00306,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-012?
+battery.kb.recall.00308,battery,recall,kb_gold_not_uniquely_supported,Component,What is the range of hasComponent?
+battery.kb.recall.00311,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-059?
+battery.kb.recall.00312,battery,recall,kb_conflicting_entity_relation,Case-Pro,What is the compatible accessory of LiCell-055?
+battery.kb.recall.00317,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-065?
+battery.kb.recall.00319,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-076?
+battery.kb.recall.00320,battery,recall,kb_conflicting_entity_relation,1800 mAh,What is the capacity of LiCell-043?
+battery.kb.recall.00321,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-061?
+battery.kb.recall.00322,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-054?
+battery.kb.recall.00323,battery,recall,kb_conflicting_entity_relation,2500 mAh,What is the capacity of LiCell-004?
+battery.kb.recall.00327,battery,recall,kb_gold_not_uniquely_supported,Material,What is the range of usesMaterial?
+battery.kb.recall.00328,battery,recall,kb_conflicting_entity_relation,VoltMax,What is the manufacturer of LiCell-058?
+battery.kb.recall.00331,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-030?
+battery.kb.recall.00335,battery,recall,kb_conflicting_entity_relation,2200 mAh,What is the capacity of LiCell-065?
+battery.kb.recall.00336,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-003?
+battery.kb.recall.00346,battery,recall,kb_conflicting_entity_relation,NanoVolt,What is the manufacturer of LiCell-052?
+battery.kb.recall.00348,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-027?
+battery.kb.recall.00352,battery,recall,kb_conflicting_entity_relation,PowerCore,What is the manufacturer of LiCell-070?
+battery.kb.recall.00354,battery,recall,kb_conflicting_entity_relation,2200 mAh,What is the capacity of LiCell-023?
+battery.kb.recall.00357,battery,recall,kb_gold_not_uniquely_supported,Product,What is the subClassOf of Battery?
+battery.kb.recall.00358,battery,recall,kb_conflicting_entity_relation,Case-Pro,What is the compatible accessory of LiCell-036?
+battery.kb.recall.00359,battery,recall,kb_conflicting_entity_relation,VoltMax,What is the manufacturer of LiCell-004?
+battery.kb.recall.00360,battery,recall,kb_conflicting_entity_relation,1800 mAh,What is the capacity of LiCell-069?
+battery.kb.recall.00365,battery,recall,kb_conflicting_entity_relation,Case-Pro,What is the compatible accessory of LiCell-060?
+battery.kb.recall.00367,battery,recall,kb_conflicting_entity_relation,BMS-Guard,What is the compatible accessory of LiCell-043?
+battery.kb.recall.00368,battery,recall,kb_conflicting_entity_relation,PowerCore,What is the manufacturer of LiCell-064?
+battery.kb.recall.00375,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-066?
+battery.kb.recall.00381,battery,recall,kb_conflicting_entity_relation,NanoVolt,What is the manufacturer of LiCell-003?
+battery.kb.recall.00386,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-050?
+battery.kb.recall.00387,battery,recall,kb_conflicting_entity_relation,CellTech,What is the manufacturer of LiCell-019?
+battery.kb.recall.00389,battery,recall,kb_conflicting_entity_relation,PowerCore,What is the manufacturer of LiCell-011?
+battery.kb.recall.00395,battery,recall,kb_conflicting_entity_relation,VoltMax,What is the manufacturer of LiCell-066?
+battery.kb.recall.00402,battery,recall,kb_conflicting_entity_relation,BMS-Guard,What is the compatible accessory of LiCell-079?
+battery.kb.recall.00404,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-066?
+battery.kb.recall.00406,battery,recall,kb_conflicting_entity_relation,2500 mAh,What is the capacity of LiCell-038?
+battery.kb.recall.00408,battery,recall,kb_gold_not_uniquely_supported,Board1,What is the hasComponent of ProductA?
+battery.kb.recall.00410,battery,recall,kb_conflicting_entity_relation,2200 mAh,What is the capacity of LiCell-056?
+battery.kb.recall.00411,battery,recall,kb_conflicting_entity_relation,Energen,What is the manufacturer of LiCell-005?
+battery.kb.recall.00417,battery,recall,kb_conflicting_entity_relation,CellTech,What is the manufacturer of LiCell-072?
+battery.kb.recall.00421,battery,recall,kb_conflicting_entity_relation,CellTech,What is the manufacturer of LiCell-036?
+battery.kb.recall.00422,battery,recall,kb_conflicting_entity_relation,18 V,What is the voltage of LiCell-040?
+battery.kb.recall.00424,battery,recall,kb_conflicting_entity_relation,2200 mAh,What is the capacity of LiCell-051?
+battery.kb.recall.00426,battery,recall,kb_conflicting_entity_relation,2200 mAh,What is the capacity of LiCell-034?
+battery.kb.recall.00428,battery,recall,kb_conflicting_entity_relation,3.7 V,What is the voltage of LiCell-008?
+battery.kb.recall.00430,battery,recall,kb_conflicting_entity_relation,CellTech,What is the manufacturer of LiCell-022?
+battery.kb.recall.00432,battery,recall,kb_conflicting_entity_relation,2500 mAh,What is the capacity of LiCell-072?
+battery.kb.recall.00436,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-031?
+battery.kb.recall.00438,battery,recall,kb_conflicting_entity_relation,18 V,What is the voltage of LiCell-042?
+battery.kb.recall.00439,battery,recall,kb_conflicting_entity_relation,18 V,What is the voltage of LiCell-079?
+battery.kb.recall.00440,battery,recall,kb_conflicting_entity_relation,2200 mAh,What is the capacity of LiCell-055?
+battery.kb.recall.00442,battery,recall,kb_conflicting_entity_relation,3500 mAh,What is the capacity of LiCell-014?
+battery.kb.recall.00443,battery,recall,kb_conflicting_entity_relation,1800 mAh,What is the capacity of LiCell-040?
+battery.kb.recall.00444,battery,recall,kb_conflicting_entity_relation,18 V,What is the voltage of LiCell-051?
+battery.kb.recall.00447,battery,recall,kb_conflicting_entity_relation,3.7 V,What is the voltage of LiCell-013?
+battery.kb.recall.00448,battery,recall,kb_conflicting_entity_relation,Case-Pro,What is the compatible accessory of LiCell-062?
+battery.kb.recall.00451,battery,recall,kb_conflicting_entity_relation,3.7 V,What is the voltage of LiCell-017?
+battery.kb.recall.00454,battery,recall,kb_gold_not_uniquely_supported,Component,What is the subClassOf of WirelessModule?
+battery.kb.recall.00455,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-071?
+battery.kb.recall.00456,battery,recall,kb_conflicting_entity_relation,CellTech,What is the manufacturer of LiCell-049?
+battery.kb.recall.00459,battery,recall,kb_conflicting_entity_relation,Energen,What is the manufacturer of LiCell-012?
+battery.kb.recall.00463,battery,recall,kb_gold_not_uniquely_supported,WirelessModule2,What is the hasComponent of ProductC?
+battery.kb.recall.00464,battery,recall,kb_conflicting_entity_relation,1800 mAh,What is the capacity of LiCell-001?
+battery.kb.recall.00467,battery,recall,kb_conflicting_entity_relation,2500 mAh,What is the capacity of LiCell-024?
+battery.kb.recall.00471,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-010?
+battery.kb.recall.00472,battery,recall,kb_conflicting_entity_relation,VoltMax,What is the manufacturer of LiCell-030?
+battery.kb.recall.00474,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-029?
+battery.kb.recall.00477,battery,recall,kb_conflicting_entity_relation,1800 mAh,What is the capacity of LiCell-037?
+battery.kb.recall.00478,battery,recall,kb_gold_not_uniquely_supported,Battery,What is the domain of capacity?
+battery.kb.recall.00480,battery,recall,kb_conflicting_entity_relation,1800 mAh,What is the capacity of LiCell-021?
+battery.kb.recall.00483,battery,recall,kb_conflicting_entity_relation,3500 mAh,What is the capacity of LiCell-053?
+battery.kb.recall.00485,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-053?
+battery.kb.recall.00487,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-002?
+battery.kb.recall.00494,battery,recall,kb_conflicting_entity_relation,QuickMount,What is the compatible accessory of LiCell-000?
+battery.kb.recall.00498,battery,recall,kb_gold_not_uniquely_supported,Spec,What is the range of hasSpec?
+battery.kb.recall.00504,battery,recall,kb_conflicting_entity_relation,NanoVolt,What is the manufacturer of LiCell-060?
+battery.kb.recall.00515,battery,recall,kb_conflicting_entity_relation,PowerCore,What is the manufacturer of LiCell-055?
+battery.kb.recall.00517,battery,recall,kb_conflicting_entity_relation,FuseKit,What is the compatible accessory of LiCell-073?
+battery.kb.recall.00520,battery,recall,kb_conflicting_entity_relation,ThermalPad,What is the compatible accessory of LiCell-049?
+battery.kb.recall.00522,battery,recall,kb_conflicting_entity_relation,4000 mAh,What is the capacity of LiCell-058?
+battery.kb.recall.00529,battery,recall,kb_conflicting_entity_relation,Case-Pro,What is the compatible accessory of LiCell-051?
+battery.kb.recall.00530,battery,recall,kb_conflicting_entity_relation,QuickMount,What is the compatible accessory of LiCell-037?
+battery.kb.recall.00536,battery,recall,kb_conflicting_entity_relation,3.7 V,What is the voltage of LiCell-072?
+battery.kb.recall.00543,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-019?
+battery.kb.recall.00546,battery,recall,kb_conflicting_entity_relation,18 V,What is the voltage of LiCell-067?
+battery.kb.recall.00547,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-004?
+battery.kb.recall.00548,battery,recall,kb_conflicting_entity_relation,3.7 V,What is the voltage of LiCell-020?
+battery.kb.recall.00556,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-035?
+battery.kb.recall.00559,battery,recall,kb_conflicting_entity_relation,3500 mAh,What is the capacity of LiCell-052?
+battery.kb.recall.00560,battery,recall,kb_conflicting_entity_relation,3.7 V,What is the voltage of LiCell-016?
+battery.kb.recall.00563,battery,recall,kb_conflicting_entity_relation,2200 mAh,What is the capacity of LiCell-049?
+battery.kb.recall.00567,battery,recall,kb_conflicting_entity_relation,1800 mAh,What is the capacity of LiCell-013?
+battery.kb.recall.00569,battery,recall,kb_gold_not_uniquely_supported,EN 62133-2,What is the conformsTo of ProductA?
+battery.kb.recall.00575,battery,recall,kb_gold_not_uniquely_supported,Product,What is the domain of requiresStep?
+battery.kb.recall.00580,battery,recall,kb_gold_not_uniquely_supported,Battery,What is the subClassOf of Rechargeable Battery?
+battery.kb.recall.00584,battery,recall,kb_conflicting_entity_relation,2200 mAh,What is the capacity of LiCell-006?
+battery.kb.recall.00588,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-077?
+battery.kb.recall.00590,battery,recall,kb_conflicting_entity_relation,2500 mAh,What is the capacity of LiCell-020?
+battery.kb.recall.00595,battery,recall,kb_gold_not_uniquely_supported,Spec,What is the subClassOf of capacity?
+battery.kb.recall.00597,battery,recall,kb_conflicting_entity_relation,CellTech,What is the manufacturer of LiCell-025?
+battery.kb.recall.00599,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-002?
+battery.kb.recall.00601,battery,recall,kb_gold_not_uniquely_supported,accessory,What is the range of compatible accessory?
+battery.kb.recall.00609,battery,recall,kb_conflicting_entity_relation,1800 mAh,What is the capacity of LiCell-060?
+battery.kb.recall.00611,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-075?
+battery.kb.recall.00613,battery,recall,kb_gold_not_uniquely_supported,Spec,What is the subClassOf of voltage?
+battery.kb.recall.00615,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-055?
+battery.kb.recall.00619,battery,recall,kb_conflicting_entity_relation,NanoVolt,What is the manufacturer of LiCell-059?
+battery.kb.recall.00621,battery,recall,kb_conflicting_entity_relation,2500 mAh,What is the capacity of LiCell-047?
+battery.kb.recall.00631,battery,recall,kb_conflicting_entity_relation,18 V,What is the voltage of LiCell-069?
+battery.kb.recall.00634,battery,recall,kb_conflicting_entity_relation,2500 mAh,What is the capacity of LiCell-059?
+battery.kb.recall.00635,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-016?
+battery.kb.recall.00638,battery,recall,kb_conflicting_entity_relation,3500 mAh,What is the capacity of LiCell-028?
+battery.kb.recall.00640,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-039?
+battery.kb.recall.00645,battery,recall,kb_gold_not_uniquely_supported,Component,What is the domain of usesMaterial?
+battery.kb.recall.00646,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-003?
+battery.kb.recall.00650,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-075?
+battery.kb.recall.00652,battery,recall,kb_conflicting_entity_relation,Energen,What is the manufacturer of LiCell-026?
+battery.kb.recall.00654,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-025?
+battery.kb.recall.00655,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-046?
+battery.kb.recall.00656,battery,recall,kb_conflicting_entity_relation,3.7 V,What is the voltage of LiCell-024?
+battery.kb.recall.00663,battery,recall,kb_conflicting_entity_relation,VoltMax,What is the manufacturer of LiCell-015?
+battery.kb.recall.00665,battery,recall,kb_gold_not_uniquely_supported,manufacturer,What is the range of manufacturer?
+battery.kb.recall.00666,battery,recall,kb_gold_not_uniquely_supported,Battery,What is the domain of voltage?
+battery.kb.recall.00671,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-046?
+battery.kb.recall.00674,battery,recall,kb_gold_not_uniquely_supported,Product,What is the domain of requiresCompliance?
+battery.kb.recall.00676,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-006?
+battery.kb.recall.00679,battery,recall,kb_gold_not_uniquely_supported,voltage,What is the range of voltage?
+battery.kb.recall.00681,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-012?
+battery.kb.recall.00683,battery,recall,kb_conflicting_entity_relation,1800 mAh,What is the capacity of LiCell-045?
+battery.kb.recall.00686,battery,recall,kb_gold_not_uniquely_supported,Rechargeable Battery,What is the subClassOf of Lithium-ion Battery?
+battery.kb.recall.00688,battery,recall,kb_conflicting_entity_relation,PowerCore,What is the manufacturer of LiCell-031?
+battery.kb.recall.00689,battery,recall,kb_conflicting_entity_relation,BMS-Guard,What is the compatible accessory of LiCell-040?
+battery.kb.recall.00695,battery,recall,kb_conflicting_entity_relation,7.4 V,What is the voltage of LiCell-034?
+battery.kb.recall.00700,battery,recall,kb_conflicting_entity_relation,1800 mAh,What is the capacity of LiCell-009?
+battery.kb.recall.00710,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-037?
+battery.kb.recall.00713,battery,recall,kb_conflicting_entity_relation,12 V,What is the voltage of LiCell-048?
+battery.kb.recall.00719,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-032?
+battery.kb.recall.01229,battery,recall,kb_conflicting_entity_relation,2200 mAh,What is the capacity of LiCell-074?
+battery.kb.recall.01230,battery,recall,kb_conflicting_entity_relation,7.4 V,What is the voltage of LiCell-052?
+battery.kb.recall.01241,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-031?
+battery.kb.recall.01244,battery,recall,kb_gold_not_uniquely_supported,Product,What is the domain of conformsTo?
+battery.kb.recall.01246,battery,recall,kb_conflicting_entity_relation,3500 mAh,What is the capacity of LiCell-033?
+battery.kb.recall.01265,battery,recall,kb_gold_not_uniquely_supported,LeadMaterial,What is the usesMaterial of Board1?
+battery.kb.recall.01279,battery,recall,kb_conflicting_entity_relation,3000 mAh,What is the capacity of LiCell-022?
+battery.kb.recall.01280,battery,recall,kb_conflicting_entity_relation,2200 mAh,What is the capacity of LiCell-044?
+battery.kb.recall.01282,battery,recall,kb_conflicting_entity_relation,18 V,What is the voltage of LiCell-043?
+battery.kb.recall.01301,battery,recall,kb_gold_not_uniquely_supported,ProcessStep,What is the range of hasStep?
+battery.kb.recall.01306,battery,recall,kb_conflicting_entity_relation,3.7 V,What is the voltage of LiCell-074?
+battery.kb.recall.01319,battery,recall,kb_conflicting_entity_relation,4000 mAh,What is the capacity of LiCell-048?
+battery.kb.recall.01323,battery,recall,kb_conflicting_entity_relation,2200 mAh,What is the capacity of LiCell-025?
+battery.kb.recall.01333,battery,recall,kb_conflicting_entity_relation,18 V,What is the voltage of LiCell-001?
+battery.kb.recall.01334,battery,recall,kb_conflicting_entity_relation,1800 mAh,What is the capacity of LiCell-011?
+battery.kb.recall.01339,battery,recall,kb_conflicting_entity_relation,2200 mAh,What is the capacity of LiCell-061?
+battery.kb.recall.01340,battery,recall,kb_conflicting_entity_relation,4000 mAh,What is the capacity of LiCell-042?
+battery.kb.recall.01354,battery,recall,kb_conflicting_entity_relation,24 V,What is the voltage of LiCell-056?
+cleandocopen-000000,viessmann,open,doc_gold_non_atomic,AWO‑E‑AC 251.A08. It is **not** an official,"According to viessmann_seed_0000, what is the variant?"
+cleandocopen-000001,battery,open,doc_label_malformed,Light Means of Transport (LMT) battery,"According to battery_seed_0001, what is the Category (EU 2023/1542)?"
+cleandocopen-000007,viessmann,open,doc_placeholder_gold,(enter your SKU),"According to viessmann_seed_0001, what is the MPN / Package code?"
+cleandocopen-000008,battery,open,doc_placeholder_gold,(enter EPREL ID here),"According to battery_seed_0001, what is the EPREL ID?"
+cleandocopen-000009,battery,open,doc_label_malformed,https://id.gs1.org/01/03012345678988/21/BMZ-0BB6A96154,"According to battery_seed_0001, what is the GS1 Digital Link (example)?"
+cleandocopen-000010,battery,open,doc_label_malformed,"see warranty criteria; depends on depth‑of‑discharge, temperature, C‑rates","According to battery_seed_0002, what is the Cycle life (example)?"
+cleandocopen-000011,battery,open,doc_placeholder_gold,(enter — natural convection / liquid loop / forced air),"According to battery_seed_0002, what is the Thermal management?"
+cleandocopen-000013,battery,open,doc_placeholder_gold,"(enter format e.g., prismatic/pouch/cylindrical)","According to battery_seed_0003, what is the Cells?"
+cleandocopen-000015,battery,open,doc_placeholder_gold,"(enter blend; e.g., NMC with high‑Ni; graphite/anode blend for Li‑ion)","According to battery_seed_0003, what is the Cathode/anode?"
+cleandocopen-000020,viessmann,open,doc_label_malformed,~1.8,"According to viessmann_seed_0003, what is the Factory charge (kg)?"
+cleandocopen-000026,battery,open,doc_label_malformed,return through authorized schemes or contract take‑back,"According to battery_seed_0005, what is the Producer responsibility (EPR)?"
+cleandocopen-000028,battery,open,doc_gold_non_atomic,recover Al/Cu/Fe; process black mass hydrometallurgically (Li‑ion) or closed‑loop lead,"According to battery_seed_0005, what is the Recycling?"
+cleandocopen-000028,lexmark,open,doc_placeholder_gold,(enter country/plant),"According to lexmark_seed_0004, what is the Country of origin?"
+cleandocopen-000029,lexmark,open,doc_placeholder_gold,(enter for your region),"According to lexmark_seed_0004, what is the SKU / Part numbers?"
+cleandocopen-000032,battery,open,doc_label_malformed,https://id.gs1.org/01/03012345678988/21/BMZ-0BB6A96154,"According to battery_seed_0006, what is the Digital Link (QR/NFC)?"
+cleandocopen-000033,lexmark,open,doc_placeholder_gold,"(enter, if applicable)","According to lexmark_seed_0005, what is the EU authorised representative?"
+cleandocopen-000033,viessmann,open,doc_placeholder_gold,(enter if known),"According to viessmann_seed_0006, what is the Firmware version?"
+cleandocopen-000034,lexmark,open,doc_placeholder_gold,(enter legal address),"According to lexmark_seed_0005, what is the Address?"
+cleandocopen-000038,battery,open,doc_placeholder_gold,Public sources + placeholders — replace 'verify' with official values,"According to battery_seed_0007, what is the Data quality?"
+cleandocopen-000040,lexmark,open,doc_label_malformed,(verify datasheet),"According to lexmark_seed_0006, what is the Duty cycle (max)?"
+cleandocopen-000042,battery,open,doc_label_malformed,Light Means of Transport (LMT) battery,"According to battery_seed_0008, what is the Category (EU 2023/1542)?"
+cleandocopen-000047,lexmark,open,doc_gold_non_atomic,Color control policies; secure print; cert management; TLS/IPsec; optional pull print,"According to lexmark_seed_0007, what is the Security (typical)?"
+cleandocopen-000049,viessmann,open,doc_label_malformed,https://id.gs1.org/01/04012345678970/21/VSN-AWO‑E‑AC251.A08-A2CFC924DF,"According to viessmann_seed_0008, what is the Digital Link (QR/NFC)?"
+cleandocopen-000051,lexmark,open,doc_label_malformed,"Toner, imaging unit/drum, fuser, rollers","According to lexmark_seed_0008, what is the Field replaceables (typical)?"
+cleandocopen-000054,battery,open,doc_label_malformed,Electric vehicle battery,"According to battery_seed_0010, what is the Category (EU 2023/1542)?"
+cleandocopen-000054,viessmann,open,doc_placeholder_gold,Mixed (public sources + placeholders). Replace 'verify' fields with official values,"According to viessmann_seed_0009, what is the Data quality?"
+cleandocopen-000055,viessmann,open,doc_gold_non_atomic,Align final structure/fields with EU ESPR delegated act for heat pumps and with EPREL,"According to viessmann_seed_0009, what is the Notes?"
+cleandocopen-000056,viessmann,open,doc_gold_non_atomic,AWO‑E‑AC 251.A10. It is **not** an official,"According to viessmann_seed_0010, what is the variant?"
+cleandocopen-000059,battery,open,doc_label_malformed,350,"According to battery_seed_0010, what is the Mass (approx.)?"
+cleandocopen-000059,lexmark,open,doc_label_malformed,https://support.lexmark.com (model page) + local asset tag,"According to lexmark_seed_0010, what is the Digital Link (QR/NFC)?"
+cleandocopen-000060,lexmark,open,doc_placeholder_gold,(enter regional URL),"According to lexmark_seed_0010, what is the Product page?"
+cleandocopen-000063,viessmann,open,doc_placeholder_gold,(enter your SKU),"According to viessmann_seed_0011, what is the MPN / Package code?"
+cleandocopen-000065,lexmark,open,doc_placeholder_gold,Public sources + placeholders — replace 'verify' with official values,"According to lexmark_seed_0010, what is the Data quality?"
+cleandocopen-000066,battery,open,doc_label_malformed,https://id.gs1.org/01/03012345678919/21/NVLT-EVP-400-55-74DC0BC979,"According to battery_seed_0011, what is the GS1 Digital Link (example)?"
+cleandocopen-000069,battery,open,doc_label_malformed,LiPF6 in organic solvent,"According to battery_seed_0012, what is the Graphite (blend) Electrolyte?"
+cleandocopen-000074,battery,open,doc_label_malformed,Industrial battery,"According to battery_seed_0014, what is the Category (EU 2023/1542)?"
+cleandocopen-000075,battery,open,doc_label_malformed,45,"According to battery_seed_0014, what is the Mass (approx.)?"
+cleandocopen-000075,lexmark,open,doc_placeholder_gold,(enter country/plant),"According to lexmark_seed_0011, what is the Country of origin?"
+cleandocopen-000076,lexmark,open,doc_placeholder_gold,(enter for your region),"According to lexmark_seed_0011, what is the SKU / Part numbers?"
+cleandocopen-000076,viessmann,open,doc_label_malformed,~2.0,"According to viessmann_seed_0013, what is the Factory charge (kg)?"
+cleandocopen-000080,lexmark,open,doc_placeholder_gold,"(enter, if applicable)","According to lexmark_seed_0012, what is the EU authorised representative?"
+cleandocopen-000081,lexmark,open,doc_placeholder_gold,(enter legal address),"According to lexmark_seed_0012, what is the Address?"
+cleandocopen-000082,battery,open,doc_label_malformed,compliant,"According to battery_seed_0015, what is the UN 38.3 transportation testing (cells & battery pack)?"
+cleandocopen-000083,battery,open,doc_label_malformed,compliant,"According to battery_seed_0015, what is the ion safety)?"
+cleandocopen-000084,battery,open,doc_label_malformed,EN 61000 series,"According to battery_seed_0015, what is the CE/EMC (pack with BMS)?"
+cleandocopen-000087,lexmark,open,doc_label_malformed,(verify datasheet),"According to lexmark_seed_0013, what is the Duty cycle (max)?"
+cleandocopen-000089,viessmann,open,doc_placeholder_gold,(enter if known),"According to viessmann_seed_0015, what is the Firmware version?"
+cleandocopen-000090,battery,open,doc_label_malformed,≤30 % SOC,"According to battery_seed_0015, what is the P903 (ADR) or equivalent State of charge for transport?"
+cleandocopen-000094,lexmark,open,doc_label_malformed,Standard security suite; certificate management; admin password enforced,"According to lexmark_seed_0014, what is the Security (typical)?"
+cleandocopen-000097,battery,open,doc_label_malformed,SLI,"According to battery_seed_0017, what is the Category (EU 2023/1542)?"
+cleandocopen-000098,lexmark,open,doc_label_malformed,"Toner, imaging unit/drum, fuser, rollers","According to lexmark_seed_0015, what is the Field replaceables (typical)?"
+cleandocopen-000105,viessmann,open,doc_label_malformed,https://id.gs1.org/01/04012345678949/21/VSN-AWO‑E‑AC251.A10-84BE69061A,"According to viessmann_seed_0017, what is the Digital Link (QR/NFC)?"
+cleandocopen-000106,lexmark,open,doc_label_malformed,https://support.lexmark.com (model page) + local asset tag,"According to lexmark_seed_0017, what is the Digital Link (QR/NFC)?"
+cleandocopen-000107,lexmark,open,doc_placeholder_gold,(enter regional URL),"According to lexmark_seed_0017, what is the Product page?"
+cleandocopen-000110,viessmann,open,doc_placeholder_gold,Mixed (public sources + placeholders). Replace 'verify' fields with official values,"According to viessmann_seed_0018, what is the Data quality?"
+cleandocopen-000111,battery,open,doc_label_malformed,Industrial battery,"According to battery_seed_0019, what is the Category (EU 2023/1542)?"
+cleandocopen-000111,viessmann,open,doc_gold_non_atomic,Align final structure/fields with EU ESPR delegated act for heat pumps and with EPREL,"According to viessmann_seed_0018, what is the Notes?"
+cleandocopen-000112,lexmark,open,doc_placeholder_gold,Public sources + placeholders — replace 'verify' with official values,"According to lexmark_seed_0017, what is the Data quality?"
+cleandocopen-000112,viessmann,open,doc_gold_non_atomic,AWO‑E‑AC 251.A13. It is **not** an official,"According to viessmann_seed_0019, what is the variant?"
+cleandocopen-000119,viessmann,open,doc_placeholder_gold,(enter your SKU),"According to viessmann_seed_0020, what is the MPN / Package code?"
+cleandocopen-000122,lexmark,open,doc_placeholder_gold,(enter country/plant),"According to lexmark_seed_0018, what is the Country of origin?"
+cleandocopen-000123,lexmark,open,doc_placeholder_gold,(enter for your region),"According to lexmark_seed_0018, what is the SKU / Part numbers?"
+cleandocopen-000125,battery,open,doc_label_malformed,Electric vehicle battery,"According to battery_seed_0022, what is the Category (EU 2023/1542)?"
+cleandocopen-000127,lexmark,open,doc_placeholder_gold,"(enter, if applicable)","According to lexmark_seed_0019, what is the EU authorised representative?"
+cleandocopen-000128,lexmark,open,doc_placeholder_gold,(enter legal address),"According to lexmark_seed_0019, what is the Address?"
+cleandocopen-000132,battery,open,doc_placeholder_gold,(enter EPREL ID here),"According to battery_seed_0022, what is the EPREL ID?"
+cleandocopen-000132,viessmann,open,doc_label_malformed,~2.4,"According to viessmann_seed_0022, what is the Factory charge (kg)?"
+cleandocopen-000133,battery,open,doc_label_malformed,https://id.gs1.org/01/03012345678957/21/NORTHVOLT-8A89E532C0,"According to battery_seed_0022, what is the GS1 Digital Link (example)?"
+cleandocopen-000134,battery,open,doc_label_malformed,CCS/DC fast per vehicle; pack charge via on‑board BMS,"According to battery_seed_0024, what is the Charge window (typical)?"
+cleandocopen-000134,lexmark,open,doc_label_malformed,(verify datasheet),"According to lexmark_seed_0020, what is the Duty cycle (max)?"
+cleandocopen-000135,battery,open,doc_label_malformed,"see warranty criteria; depends on depth‑of‑discharge, temperature, C‑rates","According to battery_seed_0024, what is the Cycle life (example)?"
+cleandocopen-000136,battery,open,doc_placeholder_gold,(enter — natural convection / liquid loop / forced air),"According to battery_seed_0024, what is the Thermal management?"
+cleandocopen-000139,battery,open,doc_placeholder_gold,"(enter format e.g., prismatic/pouch/cylindrical)","According to battery_seed_0025, what is the Cells?"
+cleandocopen-000141,battery,open,doc_placeholder_gold,"(enter blend; e.g., NMC with high‑Ni; graphite/anode blend for Li‑ion)","According to battery_seed_0025, what is the Cathode/anode?"
+cleandocopen-000141,lexmark,open,doc_label_malformed,"802.1X, TLS, SNMPv3; admin policies; secure erase for storage","According to lexmark_seed_0021, what is the Security (typical)?"
+cleandocopen-000145,lexmark,open,doc_label_malformed,"Toner, imaging unit/drum, fuser, rollers","According to lexmark_seed_0022, what is the Field replaceables (typical)?"
+cleandocopen-000147,viessmann,open,doc_placeholder_gold,(enter if known),"According to viessmann_seed_0024, what is the Firmware version?"
+cleandocopen-000152,battery,open,doc_label_malformed,return through authorized schemes or contract take‑back,"According to battery_seed_0027, what is the Producer responsibility (EPR)?"
+cleandocopen-000153,lexmark,open,doc_label_malformed,https://support.lexmark.com (model page) + local asset tag,"According to lexmark_seed_0024, what is the Digital Link (QR/NFC)?"
+cleandocopen-000154,battery,open,doc_gold_non_atomic,recover Al/Cu/Fe; process black mass hydrometallurgically (Li‑ion) or closed‑loop lead,"According to battery_seed_0027, what is the Recycling?"
+cleandocopen-000154,lexmark,open,doc_placeholder_gold,(enter regional URL),"According to lexmark_seed_0024, what is the Product page?"
+cleandocopen-000158,battery,open,doc_label_malformed,https://id.gs1.org/01/03012345678957/21/NORTHVOLT-8A89E532C0,"According to battery_seed_0028, what is the Digital Link (QR/NFC)?"
+cleandocopen-000159,lexmark,open,doc_placeholder_gold,Public sources + placeholders — replace 'verify' with official values,"According to lexmark_seed_0024, what is the Data quality?"
+cleandocopen-000163,viessmann,open,doc_label_malformed,https://id.gs1.org/01/04012345678963/21/VSN-AWO‑E‑AC251.A13-9B7C701AC0,"According to viessmann_seed_0026, what is the Digital Link (QR/NFC)?"
+cleandocopen-000164,battery,open,doc_placeholder_gold,Public sources + placeholders — replace 'verify' with official values,"According to battery_seed_0029, what is the Data quality?"
+cleandocopen-000167,battery,open,doc_label_malformed,Industrial battery,"According to battery_seed_0031, what is the Category (EU 2023/1542)?"
+cleandocopen-000168,viessmann,open,doc_placeholder_gold,Mixed (public sources + placeholders). Replace 'verify' fields with official values,"According to viessmann_seed_0027, what is the Data quality?"
+cleandocopen-000169,viessmann,open,doc_gold_non_atomic,Align final structure/fields with EU ESPR delegated act for heat pumps and with EPREL,"According to viessmann_seed_0027, what is the Notes?"
+cleandocopen-000170,viessmann,open,doc_gold_non_atomic,AWO‑E‑AC 251.A19. It is **not** an official,"According to viessmann_seed_0028, what is the variant?"
+cleandocopen-000174,battery,open,doc_placeholder_gold,(enter EPREL ID here),"According to battery_seed_0031, what is the EPREL ID?"
+cleandocopen-000175,battery,open,doc_label_malformed,https://id.gs1.org/01/03012345678933/21/SAFT-59E123EB92,"According to battery_seed_0031, what is the GS1 Digital Link (example)?"
+cleandocopen-000177,battery,open,doc_label_malformed,"see warranty criteria; depends on depth‑of‑discharge, temperature, C‑rates","According to battery_seed_0033, what is the Cycle life (example)?"
+cleandocopen-000177,viessmann,open,doc_placeholder_gold,(enter your SKU),"According to viessmann_seed_0029, what is the MPN / Package code?"
+cleandocopen-000178,battery,open,doc_placeholder_gold,(enter — natural convection / liquid loop / forced air),"According to battery_seed_0033, what is the Thermal management?"
+cleandocopen-000181,battery,open,doc_placeholder_gold,"(enter format e.g., prismatic/pouch/cylindrical)","According to battery_seed_0034, what is the Cells?"
+cleandocopen-000183,battery,open,doc_placeholder_gold,"(enter blend; e.g., NMC with high‑Ni; graphite/anode blend for Li‑ion)","According to battery_seed_0034, what is the Cathode/anode?"
+cleandocopen-000190,viessmann,open,doc_label_malformed,~3.2,"According to viessmann_seed_0031, what is the Factory charge (kg)?"
+cleandocopen-000194,battery,open,doc_label_malformed,return through authorized schemes or contract take‑back,"According to battery_seed_0036, what is the Producer responsibility (EPR)?"
+cleandocopen-000194,lexmark,open,doc_label_malformed,36S0300 / regional variants,"According to lexmark_seed_0030, what is the Part number (example)?"
+cleandocopen-000196,battery,open,doc_gold_non_atomic,recover Al/Cu/Fe; process black mass hydrometallurgically (Li‑ion) or closed‑loop lead,"According to battery_seed_0036, what is the Recycling?"
+cleandocopen-000196,lexmark,open,doc_gold_non_atomic,"350‑sheet in (250 + 100 MPF) / 150‑sheet out (std.); up to 2,000‑sheet with options","According to lexmark_seed_0031, what is the Input/Output?"
+cleandocopen-000200,battery,open,doc_label_malformed,https://id.gs1.org/01/03012345678933/21/SAFT-59E123EB92,"According to battery_seed_0037, what is the Digital Link (QR/NFC)?"
+cleandocopen-000205,viessmann,open,doc_placeholder_gold,(enter if known),"According to viessmann_seed_0034, what is the Firmware version?"
+cleandocopen-000206,battery,open,doc_placeholder_gold,Public sources + placeholders — replace 'verify' with official values,"According to battery_seed_0038, what is the Data quality?"
+cleandocopen-000209,battery,open,doc_label_malformed,SLI,"According to battery_seed_0040, what is the Category (EU 2023/1542)?"
+cleandocopen-000214,lexmark,open,doc_label_malformed,https://support.lexmark.com,"According to lexmark_seed_0033, what is the QR/Digital Link (example)?"
+cleandocopen-000216,battery,open,doc_placeholder_gold,(enter EPREL ID here),"According to battery_seed_0040, what is the EPREL ID?"
+cleandocopen-000217,battery,open,doc_label_malformed,https://id.gs1.org/01/03012345678957/21/VARTA-FCEAD75981,"According to battery_seed_0040, what is the GS1 Digital Link (example)?"
+cleandocopen-000218,battery,open,doc_label_malformed,"see warranty criteria; depends on depth‑of‑discharge, temperature, C‑rates","According to battery_seed_0042, what is the Cycle life (example)?"
+cleandocopen-000219,battery,open,doc_placeholder_gold,(enter — natural convection / liquid loop / forced air),"According to battery_seed_0042, what is the Thermal management?"
+cleandocopen-000221,battery,open,doc_placeholder_gold,"(enter format e.g., prismatic/pouch/cylindrical)","According to battery_seed_0043, what is the Cells?"
+cleandocopen-000221,viessmann,open,doc_label_malformed,https://id.gs1.org/01/04012345678987/21/VSN-AWO‑E‑AC251.A19-9691DD6136,"According to viessmann_seed_0036, what is the Digital Link (QR/NFC)?"
+cleandocopen-000223,battery,open,doc_placeholder_gold,"(enter blend; e.g., NMC with high‑Ni; graphite/anode blend for Li‑ion)","According to battery_seed_0043, what is the Cathode/anode?"
+cleandocopen-000223,lexmark,open,doc_placeholder_gold,(enter country/plant),"According to lexmark_seed_0034, what is the Country of origin?"
+cleandocopen-000224,lexmark,open,doc_placeholder_gold,(enter for your region),"According to lexmark_seed_0034, what is the SKU / Part numbers?"
+cleandocopen-000226,viessmann,open,doc_placeholder_gold,Mixed (public sources + placeholders). Replace 'verify' fields with official values,"According to viessmann_seed_0037, what is the Data quality?"
+cleandocopen-000227,viessmann,open,doc_gold_non_atomic,Align final structure/fields with EU ESPR delegated act for heat pumps and with EPREL,"According to viessmann_seed_0037, what is the Notes?"
+cleandocopen-000228,lexmark,open,doc_placeholder_gold,"(enter, if applicable)","According to lexmark_seed_0035, what is the EU authorised representative?"
+cleandocopen-000228,viessmann,open,doc_gold_non_atomic,AWO‑E‑AC 252.A10. It is **not** an official,"According to viessmann_seed_0038, what is the variant?"
+cleandocopen-000229,lexmark,open,doc_placeholder_gold,(enter legal address),"According to lexmark_seed_0035, what is the Address?"
+cleandocopen-000234,battery,open,doc_label_malformed,return through authorized schemes or contract take‑back,"According to battery_seed_0045, what is the Producer responsibility (EPR)?"
+cleandocopen-000235,lexmark,open,doc_label_malformed,(verify datasheet),"According to lexmark_seed_0036, what is the Duty cycle (max)?"
+cleandocopen-000235,viessmann,open,doc_placeholder_gold,(enter your SKU),"According to viessmann_seed_0039, what is the MPN / Package code?"
+cleandocopen-000236,battery,open,doc_gold_non_atomic,recover Al/Cu/Fe; process black mass hydrometallurgically (Li‑ion) or closed‑loop lead,"According to battery_seed_0045, what is the Recycling?"
+cleandocopen-000240,battery,open,doc_label_malformed,https://id.gs1.org/01/03012345678957/21/VARTA-FCEAD75981,"According to battery_seed_0046, what is the Digital Link (QR/NFC)?"
+cleandocopen-000241,lexmark,open,doc_label_malformed,"Admin password, 802.1X, IPsec, TLS, signed firmware","According to lexmark_seed_0037, what is the Security (typical)?"
+cleandocopen-000245,lexmark,open,doc_label_malformed,"Toner, imaging unit/drum, fuser, rollers","According to lexmark_seed_0038, what is the Field replaceables (typical)?"
+cleandocopen-000246,battery,open,doc_placeholder_gold,Public sources + placeholders — replace 'verify' with official values,"According to battery_seed_0047, what is the Data quality?"
+cleandocopen-000248,viessmann,open,doc_label_malformed,~2.0,"According to viessmann_seed_0041, what is the Factory charge (kg)?"
+cleandocopen-000249,battery,open,doc_label_malformed,Industrial battery,"According to battery_seed_0049, what is the Category (EU 2023/1542)?"
+cleandocopen-000254,viessmann,open,doc_label_ambiguous,(varies; integrated cabinet),"According to viessmann_seed_0042, what is the Weight?"
+cleandocopen-000256,battery,open,doc_placeholder_gold,(enter EPREL ID here),"According to battery_seed_0049, what is the EPREL ID?"
+cleandocopen-000257,battery,open,doc_label_malformed,https://id.gs1.org/01/03012345678926/21/VERKOR-E21338E63F,"According to battery_seed_0049, what is the GS1 Digital Link (example)?"
+cleandocopen-000258,battery,open,doc_label_malformed,"see warranty criteria; depends on depth‑of‑discharge, temperature, C‑rates","According to battery_seed_0050, what is the Cycle life (example)?"
+cleandocopen-000259,battery,open,doc_placeholder_gold,(enter — natural convection / liquid loop / forced air),"According to battery_seed_0050, what is the Thermal management?"
+cleandocopen-000262,battery,open,doc_placeholder_gold,"(enter format e.g., prismatic/pouch/cylindrical)","According to battery_seed_0051, what is the Cells?"
+cleandocopen-000263,viessmann,open,doc_placeholder_gold,(enter if known),"According to viessmann_seed_0044, what is the Firmware version?"
+cleandocopen-000279,viessmann,open,doc_label_malformed,https://id.gs1.org/01/04012345678918/21/VSN-AWO‑E‑AC252.A10-A352685A82,"According to viessmann_seed_0046, what is the Digital Link (QR/NFC)?"
+cleandocopen-000284,viessmann,open,doc_placeholder_gold,Mixed (public sources + placeholders). Replace 'verify' fields with official values,"According to viessmann_seed_0047, what is the Data quality?"
+cleandocopen-000285,viessmann,open,doc_gold_non_atomic,Align final structure/fields with EU ESPR delegated act for heat pumps and with EPREL,"According to viessmann_seed_0047, what is the Notes?"
+cleandocopen-000300,viessmann,open,doc_label_malformed,A+++,"According to viessmann_seed_0051, what is the C)?"
+cleandocopen-000302,viessmann,open,doc_label_malformed,Sound power outdoors ≈ 54 dB(A); indoors ≈ 41 dB(A),"According to viessmann_seed_0051, what is the verify)?"
+cleandocopen-000310,viessmann,open,doc_placeholder_gold,(enter if known),"According to viessmann_seed_0053, what is the Firmware version?"
+cleandocopen-000325,viessmann,open,doc_label_malformed,https://id.gs1.org/01/04012345678918/21/VSN-251A10-A62320FED7,"According to viessmann_seed_0055, what is the Digital Link (QR/NFC)?"
+cleandocopen-000330,viessmann,open,doc_placeholder_gold,Mixed (public sources + placeholders). Replace 'verify' fields with official values,"According to viessmann_seed_0056, what is the Data quality?"
+cleandocopen-000331,viessmann,open,doc_gold_non_atomic,Align final structure/fields with EU ESPR delegated act for heat pumps and with EPREL,"According to viessmann_seed_0056, what is the Notes?"
+cleandocopen-000346,viessmann,open,doc_label_malformed,A+++,"According to viessmann_seed_0060, what is the C)?"
+cleandocopen-000348,viessmann,open,doc_label_malformed,Sound power outdoors ≈ 54 dB(A); indoors ≈ 41 dB(A),"According to viessmann_seed_0060, what is the verify)?"
+cleandocopen-000356,viessmann,open,doc_placeholder_gold,(enter if known),"According to viessmann_seed_0062, what is the Firmware version?"
+cleandocopen-000371,viessmann,open,doc_label_malformed,https://id.gs1.org/01/04012345678925/21/VSN-251A10-20EF92B6E2,"According to viessmann_seed_0064, what is the Digital Link (QR/NFC)?"
+cleandocopen-000376,viessmann,open,doc_placeholder_gold,Mixed (public sources + placeholders). Replace 'verify' fields with official values,"According to viessmann_seed_0065, what is the Data quality?"
+cleandocopen-000377,viessmann,open,doc_gold_non_atomic,Align final structure/fields with EU ESPR delegated act for heat pumps and with EPREL,"According to viessmann_seed_0065, what is the Notes?"
+cleandocopen-000392,viessmann,open,doc_label_malformed,A+++,"According to viessmann_seed_0069, what is the C)?"
+cleandocopen-000394,viessmann,open,doc_label_malformed,Sound power outdoors ≈ 54 dB(A); indoors ≈ 41 dB(A),"According to viessmann_seed_0069, what is the verify)?"
+cleandocopen-000402,viessmann,open,doc_placeholder_gold,(enter if known),"According to viessmann_seed_0071, what is the Firmware version?"
+cleandocopen-000417,viessmann,open,doc_label_malformed,https://id.gs1.org/01/04012345678932/21/VSN-251A10-6CF937758D,"According to viessmann_seed_0073, what is the Digital Link (QR/NFC)?"
+cleandocopen-000422,viessmann,open,doc_placeholder_gold,Mixed (public sources + placeholders). Replace 'verify' fields with official values,"According to viessmann_seed_0074, what is the Data quality?"
+cleandocopen-000423,viessmann,open,doc_gold_non_atomic,Align final structure/fields with EU ESPR delegated act for heat pumps and with EPREL,"According to viessmann_seed_0074, what is the Notes?"
+cleandocopen-000438,viessmann,open,doc_label_malformed,A+++,"According to viessmann_seed_0078, what is the C)?"
+cleandocopen-000440,viessmann,open,doc_label_malformed,Sound power outdoors ≈ 54 dB(A); indoors ≈ 41 dB(A),"According to viessmann_seed_0078, what is the verify)?"
+cleandocopen-000448,viessmann,open,doc_placeholder_gold,(enter if known),"According to viessmann_seed_0080, what is the Firmware version?"
+cleandocopen-000463,viessmann,open,doc_label_malformed,https://id.gs1.org/01/04012345678949/21/VSN-251A10-FE5AC3AB98,"According to viessmann_seed_0082, what is the Digital Link (QR/NFC)?"
+cleandocopen-000468,viessmann,open,doc_placeholder_gold,Mixed (public sources + placeholders). Replace 'verify' fields with official values,"According to viessmann_seed_0083, what is the Data quality?"
+cleandocopen-000469,viessmann,open,doc_gold_non_atomic,Align final structure/fields with EU ESPR delegated act for heat pumps and with EPREL,"According to viessmann_seed_0083, what is the Notes?"
+cleandocopen-000484,viessmann,open,doc_label_malformed,A+++,"According to viessmann_seed_0087, what is the C)?"
+cleandocopen-000486,viessmann,open,doc_label_malformed,Sound power outdoors ≈ 54 dB(A); indoors ≈ 41 dB(A),"According to viessmann_seed_0087, what is the verify)?"
+cleandocopen-000494,viessmann,open,doc_placeholder_gold,(enter if known),"According to viessmann_seed_0089, what is the Firmware version?"
+cleandocopen-000509,viessmann,open,doc_label_malformed,https://id.gs1.org/01/04012345678956/21/VSN-251A10-A1B0E56C9A,"According to viessmann_seed_0091, what is the Digital Link (QR/NFC)?"
+cleandocopen-000514,viessmann,open,doc_placeholder_gold,Mixed (public sources + placeholders). Replace 'verify' fields with official values,"According to viessmann_seed_0092, what is the Data quality?"
+cleandocopen-000515,viessmann,open,doc_gold_non_atomic,Align final structure/fields with EU ESPR delegated act for heat pumps and with EPREL,"According to viessmann_seed_0092, what is the Notes?"
+cleandocrec-000002,battery,recall,doc_label_malformed,~3.2 kg,"According to battery_seed_0001, what is the Mass (approx.)?"
+cleandocrec-000002,viessmann,recall,doc_label_malformed,down to approx. −20 °C ambient,"According to viessmann_seed_0004, what is the Operating range (indicative)?"
+cleandocrec-000003,battery,recall,doc_label_malformed,0–45 °C; storage 30–50 % SOC,"According to battery_seed_0002, what is the Charge window (typical)?"
+cleandocrec-000003,lexmark,recall,doc_label_malformed,~222 × 368 × 363 mm,"According to lexmark_seed_0000, what is the Dimensions (H×W×D)?"
+cleandocrec-000003,viessmann,recall,doc_label_ambiguous,~205 kg,"According to viessmann_seed_0004, what is the Weight?"
+cleandocrec-000004,battery,recall,doc_label_malformed,–10 to 60 °C,"According to battery_seed_0002, what is the Discharge window (typical)?"
+cleandocrec-000004,viessmann,recall,doc_label_ambiguous,~46 kg,"According to viessmann_seed_0004, what is the Weight?"
+cleandocrec-000007,lexmark,recall,doc_label_malformed,~243.7 × 411.2 × 394.1 mm,"According to lexmark_seed_0002, what is the Dimensions (H×W×D)?"
+cleandocrec-000008,battery,recall,doc_placeholder_gold,"(enter value and method, e.g., 70–120 kg CO₂e/kWh for Li‑ion; run LCA/EPD)","According to battery_seed_0006, what is the gate carbon footprint?"
+cleandocrec-000009,lexmark,recall,doc_label_malformed,37–40 ppm,"According to lexmark_seed_0006, what is the Print speed (A4/Letter)?"
+cleandocrec-000009,viessmann,recall,doc_label_malformed,~620 kg CO₂e,"According to viessmann_seed_0008, what is the gate)?"
+cleandocrec-000011,battery,recall,doc_label_malformed,42 V CC/CV,"According to battery_seed_0008, what is the A (example) Charger?"
+cleandocrec-000014,viessmann,recall,doc_label_malformed,down to approx. −20 °C ambient,"According to viessmann_seed_0013, what is the Operating range (indicative)?"
+cleandocrec-000015,battery,recall,doc_gold_non_atomic,"e.g., 70–100 kg CO₂e/kWh if powered by low‑carbon electricity — replace with OEM value","According to battery_seed_0012, what is the Manufacturing footprint?"
+cleandocrec-000015,lexmark,recall,doc_label_malformed,30–34 ppm,"According to lexmark_seed_0013, what is the Print speed (A4/Letter)?"
+cleandocrec-000015,viessmann,recall,doc_label_ambiguous,~215 kg,"According to viessmann_seed_0014, what is the Weight?"
+cleandocrec-000016,viessmann,recall,doc_label_ambiguous,~48 kg,"According to viessmann_seed_0014, what is the Weight?"
+cleandocrec-000018,battery,recall,doc_label_malformed,~120 kg CO₂e per kWh,"According to battery_seed_0016, what is the placeholder)?"
+cleandocrec-000020,battery,recall,doc_label_malformed,~1140 Wh,"According to battery_seed_0017, what is the Ah (20 h) Energy?"
+cleandocrec-000021,battery,recall,doc_label_malformed,850–950 A (EN),"According to battery_seed_0017, what is the Cold cranking current (CCA)?"
+cleandocrec-000021,lexmark,recall,doc_label_malformed,up to 26 ppm,"According to lexmark_seed_0020, what is the Print speed (A4/Letter)?"
+cleandocrec-000021,viessmann,recall,doc_label_malformed,~620 kg CO₂e,"According to viessmann_seed_0017, what is the gate)?"
+cleandocrec-000024,battery,recall,doc_label_malformed,50 A,"According to battery_seed_0019, what is the A (10 s) (example) Max charge?"
+cleandocrec-000026,viessmann,recall,doc_label_malformed,down to approx. −20 °C ambient,"According to viessmann_seed_0022, what is the Operating range (indicative)?"
+cleandocrec-000027,battery,recall,doc_label_malformed,~300–400 kg,"According to battery_seed_0022, what is the Mass (approx.)?"
+cleandocrec-000027,viessmann,recall,doc_label_ambiguous,~225 kg,"According to viessmann_seed_0023, what is the Weight?"
+cleandocrec-000028,battery,recall,doc_label_malformed,Peak power ~170 kW (10 s),"According to battery_seed_0024, what is the Discharge window (typical)?"
+cleandocrec-000028,viessmann,recall,doc_label_ambiguous,~48 kg,"According to viessmann_seed_0023, what is the Weight?"
+cleandocrec-000031,battery,recall,doc_placeholder_gold,"(enter value and method, e.g., 70–120 kg CO₂e/kWh for Li‑ion; run LCA/EPD)","According to battery_seed_0028, what is the gate carbon footprint?"
+cleandocrec-000031,viessmann,recall,doc_label_malformed,~620 kg CO₂e,"According to viessmann_seed_0026, what is the gate)?"
+cleandocrec-000034,battery,recall,doc_label_malformed,~45 kg,"According to battery_seed_0031, what is the Mass (approx.)?"
+cleandocrec-000034,lexmark,recall,doc_label_malformed,~344 × 411 × 394 mm,"According to lexmark_seed_0029, what is the Dimensions (H×W×D)?"
+cleandocrec-000035,battery,recall,doc_label_malformed,"42–58 V CC/CV, 0–45 °C","According to battery_seed_0033, what is the Charge window (typical)?"
+cleandocrec-000035,lexmark,recall,doc_gold_non_atomic,"Unison™ toner — up to 2,500 pages/color and 3,000 pages/mono (ISO/IEC) extra‑yield","According to lexmark_seed_0029, what is the Supplies?"
+cleandocrec-000036,battery,recall,doc_label_malformed,–20 to 55 °C,"According to battery_seed_0033, what is the Discharge window (typical)?"
+cleandocrec-000036,viessmann,recall,doc_label_malformed,down to approx. −20 °C ambient,"According to viessmann_seed_0031, what is the Operating range (indicative)?"
+cleandocrec-000037,viessmann,recall,doc_label_ambiguous,~260 kg,"According to viessmann_seed_0032, what is the Weight?"
+cleandocrec-000038,viessmann,recall,doc_label_ambiguous,~52 kg,"According to viessmann_seed_0032, what is the Weight?"
+cleandocrec-000039,battery,recall,doc_placeholder_gold,"(enter value and method, e.g., 70–120 kg CO₂e/kWh for Li‑ion; run LCA/EPD)","According to battery_seed_0037, what is the gate carbon footprint?"
+cleandocrec-000041,viessmann,recall,doc_label_malformed,~620 kg CO₂e,"According to viessmann_seed_0036, what is the gate)?"
+cleandocrec-000042,battery,recall,doc_label_malformed,~24–28 kg,"According to battery_seed_0040, what is the Mass (approx.)?"
+cleandocrec-000043,battery,recall,doc_label_malformed,Follow vehicle alternator/charger profile; 14.4 V absorb,"According to battery_seed_0042, what is the Charge window (typical)?"
+cleandocrec-000043,lexmark,recall,doc_label_malformed,260 × 399 × 374 mm,"According to lexmark_seed_0033, what is the Unboxed size (H×W×D)?"
+cleandocrec-000044,battery,recall,doc_label_malformed,CCA 850–950 A (EN),"According to battery_seed_0042, what is the Discharge window (typical)?"
+cleandocrec-000045,viessmann,recall,doc_label_malformed,down to approx. −20 °C ambient,"According to viessmann_seed_0042, what is the Operating range (indicative)?"
+cleandocrec-000046,lexmark,recall,doc_label_malformed,up to 52 ppm,"According to lexmark_seed_0036, what is the Print speed (A4/Letter)?"
+cleandocrec-000046,viessmann,recall,doc_label_ambiguous,~215 kg,"According to viessmann_seed_0042, what is the Weight?"
+cleandocrec-000047,battery,recall,doc_placeholder_gold,"(enter value and method, e.g., 70–120 kg CO₂e/kWh for Li‑ion; run LCA/EPD)","According to battery_seed_0046, what is the gate carbon footprint?"
+cleandocrec-000050,battery,recall,doc_label_malformed,~8–12 kg,"According to battery_seed_0049, what is the Mass (approx.)?"
+cleandocrec-000051,battery,recall,doc_label_malformed,CC/CV per spec; 0–45 °C,"According to battery_seed_0050, what is the Charge window (typical)?"
+cleandocrec-000051,viessmann,recall,doc_label_malformed,~620 kg CO₂e,"According to viessmann_seed_0046, what is the gate)?"
+cleandocrec-000052,battery,recall,doc_label_malformed,–20 to 55 °C,"According to battery_seed_0050, what is the Discharge window (typical)?"
+cleandocrec-000053,lexmark,recall,doc_label_malformed,47–50 ppm,"According to lexmark_seed_0043, what is the Print speed (A4/Letter)?"
+cleandocrec-000054,viessmann,recall,doc_gold_non_atomic,"AWO‑E‑AC 251.A10 (230 V, monobloc, R290). It is **not** an official","According to viessmann_seed_0048, what is the variant?"
+cleandocrec-000055,battery,recall,doc_placeholder_gold,"(enter value and method, e.g., 70–120 kg CO₂e/kWh for Li‑ion; run LCA/EPD)","According to battery_seed_0054, what is the gate carbon footprint?"
+cleandocrec-000055,viessmann,recall,doc_label_malformed,~2.0 kg,"According to viessmann_seed_0050, what is the Charge (A10)?"
+cleandocrec-000057,viessmann,recall,doc_label_malformed,~2.6–9.7 kW,"According to viessmann_seed_0051, what is the W35)?"
+cleandocrec-000058,viessmann,recall,doc_label_malformed,down to approx. −20 °C ambient,"According to viessmann_seed_0051, what is the Operating range (indicative)?"
+cleandocrec-000059,viessmann,recall,doc_label_malformed,D 600 × W 1144 × H 1382 mm; weight ≈ 215 kg,"According to viessmann_seed_0052, what is the Outdoor unit (approx.)?"
+cleandocrec-000060,viessmann,recall,doc_label_malformed,D 360 × W 450 × H 920 mm; weight ≈ 48 kg,"According to viessmann_seed_0052, what is the Indoor unit (approx.)?"
+cleandocrec-000064,viessmann,recall,doc_label_malformed,~620 kg CO₂e,"According to viessmann_seed_0054, what is the gate)?"
+cleandocrec-000067,viessmann,recall,doc_gold_non_atomic,"AWO‑E‑AC 251.A10 (230 V, monobloc, R290). It is **not** an official","According to viessmann_seed_0057, what is the variant?"
+cleandocrec-000068,viessmann,recall,doc_label_malformed,~2.0 kg,"According to viessmann_seed_0059, what is the Charge (A10)?"
+cleandocrec-000070,viessmann,recall,doc_label_malformed,~2.6–9.7 kW,"According to viessmann_seed_0060, what is the W35)?"
+cleandocrec-000071,viessmann,recall,doc_label_malformed,down to approx. −20 °C ambient,"According to viessmann_seed_0060, what is the Operating range (indicative)?"
+cleandocrec-000072,viessmann,recall,doc_label_malformed,D 600 × W 1144 × H 1382 mm; weight ≈ 215 kg,"According to viessmann_seed_0061, what is the Outdoor unit (approx.)?"
+cleandocrec-000073,viessmann,recall,doc_label_malformed,D 360 × W 450 × H 920 mm; weight ≈ 48 kg,"According to viessmann_seed_0061, what is the Indoor unit (approx.)?"
+cleandocrec-000077,viessmann,recall,doc_label_malformed,~620 kg CO₂e,"According to viessmann_seed_0063, what is the gate)?"
+cleandocrec-000080,viessmann,recall,doc_gold_non_atomic,"AWO‑E‑AC 251.A10 (230 V, monobloc, R290). It is **not** an official","According to viessmann_seed_0066, what is the variant?"
+cleandocrec-000081,viessmann,recall,doc_label_malformed,~2.0 kg,"According to viessmann_seed_0068, what is the Charge (A10)?"
+cleandocrec-000083,viessmann,recall,doc_label_malformed,~2.6–9.7 kW,"According to viessmann_seed_0069, what is the W35)?"
+cleandocrec-000084,viessmann,recall,doc_label_malformed,down to approx. −20 °C ambient,"According to viessmann_seed_0069, what is the Operating range (indicative)?"
+cleandocrec-000085,viessmann,recall,doc_label_malformed,D 600 × W 1144 × H 1382 mm; weight ≈ 215 kg,"According to viessmann_seed_0070, what is the Outdoor unit (approx.)?"
+cleandocrec-000086,viessmann,recall,doc_label_malformed,D 360 × W 450 × H 920 mm; weight ≈ 48 kg,"According to viessmann_seed_0070, what is the Indoor unit (approx.)?"
+cleandocrec-000090,viessmann,recall,doc_label_malformed,~620 kg CO₂e,"According to viessmann_seed_0072, what is the gate)?"
+cleandocrec-000093,viessmann,recall,doc_gold_non_atomic,"AWO‑E‑AC 251.A10 (230 V, monobloc, R290). It is **not** an official","According to viessmann_seed_0075, what is the variant?"
+cleandocrec-000094,viessmann,recall,doc_label_malformed,~2.0 kg,"According to viessmann_seed_0077, what is the Charge (A10)?"
+cleandocrec-000096,viessmann,recall,doc_label_malformed,~2.6–9.7 kW,"According to viessmann_seed_0078, what is the W35)?"
+cleandocrec-000097,viessmann,recall,doc_label_malformed,down to approx. −20 °C ambient,"According to viessmann_seed_0078, what is the Operating range (indicative)?"
+cleandocrec-000098,viessmann,recall,doc_label_malformed,D 600 × W 1144 × H 1382 mm; weight ≈ 215 kg,"According to viessmann_seed_0079, what is the Outdoor unit (approx.)?"
+cleandocrec-000099,viessmann,recall,doc_label_malformed,D 360 × W 450 × H 920 mm; weight ≈ 48 kg,"According to viessmann_seed_0079, what is the Indoor unit (approx.)?"
+cleandocrec-000103,viessmann,recall,doc_label_malformed,~620 kg CO₂e,"According to viessmann_seed_0081, what is the gate)?"
+cleandocrec-000106,viessmann,recall,doc_gold_non_atomic,"AWO‑E‑AC 251.A10 (230 V, monobloc, R290). It is **not** an official","According to viessmann_seed_0084, what is the variant?"
+cleandocrec-000107,viessmann,recall,doc_label_malformed,~2.0 kg,"According to viessmann_seed_0086, what is the Charge (A10)?"
+cleandocrec-000109,viessmann,recall,doc_label_malformed,~2.6–9.7 kW,"According to viessmann_seed_0087, what is the W35)?"
+cleandocrec-000110,viessmann,recall,doc_label_malformed,down to approx. −20 °C ambient,"According to viessmann_seed_0087, what is the Operating range (indicative)?"
+cleandocrec-000111,viessmann,recall,doc_label_malformed,D 600 × W 1144 × H 1382 mm; weight ≈ 215 kg,"According to viessmann_seed_0088, what is the Outdoor unit (approx.)?"
+cleandocrec-000112,viessmann,recall,doc_label_malformed,D 360 × W 450 × H 920 mm; weight ≈ 48 kg,"According to viessmann_seed_0088, what is the Indoor unit (approx.)?"
+cleandocrec-000116,viessmann,recall,doc_label_malformed,~620 kg CO₂e,"According to viessmann_seed_0090, what is the gate)?"
+lexmark.kb.logic.00895,lexmark,logic,logic_class_not_derivable,Component,Is Wlan1 a Component?
+lexmark.kb.logic.01001,lexmark,logic,logic_class_not_derivable,Component,Is Head1 a Component?
+lexmark.kb.logic.01008,lexmark,logic,logic_class_not_derivable,Component,Is Toner2 a Component?
+lexmark.kb.logic.01025,lexmark,logic,logic_class_not_derivable,Component,Is Head2 a Component?
+lexmark.kb.logic.01181,lexmark,logic,logic_class_not_derivable,Component,Is Toner1 a Component?
+lexmark.kb.logic.01922,lexmark,logic,logic_class_not_derivable,Component,Is Board2 a Component?
+lexmark.kb.logic.02032,lexmark,logic,logic_class_not_derivable,Component,Is Board1 a Component?
+lexmark.kb.recall.00014,lexmark,recall,kb_gold_not_uniquely_supported,Component,What is the subClassOf of MainBoard?
+lexmark.kb.recall.00032,lexmark,recall,kb_gold_not_uniquely_supported,LeadMaterial,What is the usesMaterial of Board1?
+lexmark.kb.recall.00056,lexmark,recall,kb_gold_not_uniquely_supported,Component,What is the domain of usesMaterial?
+lexmark.kb.recall.00060,lexmark,recall,kb_gold_not_uniquely_supported,Component,What is the range of hasComponent?
+lexmark.kb.recall.00127,lexmark,recall,kb_gold_not_uniquely_supported,Wlan1,What is the hasComponent of PrinterL1?
+lexmark.kb.recall.00135,lexmark,recall,kb_gold_not_uniquely_supported,cartridge,What is the range of cartridge?
+lexmark.kb.recall.00199,lexmark,recall,kb_gold_not_uniquely_supported,cartridge,What is the domain of yield?
+lexmark.kb.recall.00253,lexmark,recall,kb_gold_not_uniquely_supported,Accessory,What is the range of duplex unit?
+lexmark.kb.recall.00265,lexmark,recall,kb_gold_not_uniquely_supported,Component,What is the subClassOf of WirelessModule?
+lexmark.kb.recall.00271,lexmark,recall,kb_gold_not_uniquely_supported,Standard,What is the range of requiresCompliance?
+lexmark.kb.recall.00286,lexmark,recall,kb_gold_not_uniquely_supported,ProcessStep,What is the range of requiresStep?
+lexmark.kb.recall.00321,lexmark,recall,kb_gold_not_uniquely_supported,Toner2,What is the hasComponent of PrinterL2?
+lexmark.kb.recall.00347,lexmark,recall,kb_gold_not_uniquely_supported,Component,What is the subClassOf of PrinterHead?
+lexmark.kb.recall.00402,lexmark,recall,kb_gold_not_uniquely_supported,Product,What is the domain of hasComponent?
+lexmark.kb.recall.00450,lexmark,recall,kb_gold_not_uniquely_supported,printer,What is the subClassOf of laser printer?
+lexmark.kb.recall.00460,lexmark,recall,kb_gold_not_uniquely_supported,Material,What is the range of usesMaterial?
+lexmark.kb.recall.00509,lexmark,recall,kb_gold_not_uniquely_supported,Product,What is the domain of requiresCompliance?
+lexmark.kb.recall.01265,lexmark,recall,kb_gold_not_uniquely_supported,printer,What is the domain of cartridge?
+lexmark.kb.recall.01318,lexmark,recall,kb_gold_not_uniquely_supported,yield,What is the range of yield?
+lexmark.kb.recall.01367,lexmark,recall,kb_gold_not_uniquely_supported,printer,What is the domain of duplex unit?
+lexmark.kb.recall.01390,lexmark,recall,kb_gold_not_uniquely_supported,Standard,What is the range of conformsTo?
+lexmark.kb.recall.01439,lexmark,recall,kb_gold_not_uniquely_supported,Component,What is the subClassOf of TonerCartridge?
+lexmark.kb.recall.01458,lexmark,recall,kb_gold_not_uniquely_supported,EMC Compliance,What is the conformsTo of PrinterL1?
+lexmark.kb.recall.01468,lexmark,recall,kb_gold_not_uniquely_supported,Product,What is the domain of requiresStep?
+lexmark.kb.recall.01562,lexmark,recall,kb_gold_not_uniquely_supported,Product,What is the domain of conformsTo?
+log-000000,battery,logic,records_logic_not_verified,yes,Do we have ProductC include a wireless module? (records)
+log-000000,lexmark,logic,records_logic_not_verified,no,Does PrinterL2 include a wireless module? (records)
+log-000000,viessmann,logic,records_logic_not_verified,no,Does ProductV2 use a refrigerant in any component? (records)
+log-000001,battery,logic,records_logic_not_verified,no,Would you say it true that ProductC include a batterys component?
+log-000001,lexmark,logic,records_logic_not_verified,no,Do we have PrinterL2 include any lead-containing component?
+log-000001,viessmann,logic,records_logic_not_verified,no,Do we have ProductV2 include any lead-containing component?
+log-000002,battery,logic,records_logic_not_verified,yes,Is ProductAs linked to any compliance standard? (records)
+log-000002,lexmark,logic,records_logic_not_verified,no,Would you say PrinterL2 linked to any compliance standard? (records)
+log-000002,viessmann,logic,records_logic_not_verified,no,Would you say ProductV2 linked to any compliance standard? (records)
+log-000003,battery,logic,records_logic_not_verified,no,Does ProductB include a wireless module?
+log-000003,lexmark,logic,records_logic_not_verified,yes,Do we have PrinterL1 include any lead-containing component? (records)
+log-000003,viessmann,logic,records_logic_not_verified,yes,Do we have ProductV1 include any lead-containing component? (records)
+log-000004,battery,logic,records_logic_not_verified,yes,Does ProductA include a battery component?
+log-000004,lexmark,logic,records_logic_not_verified,yes,Would you say PrinterL1 linked to any compliance standard? (records)
+log-000004,viessmann,logic,records_logic_not_verified,yes,Would you say ProductV1 linked to any compliance standard? (records)
+log-000005,battery,logic,records_logic_not_verified,no,Is ProductBe linked to any compliance standard?
+log-000005,lexmark,logic,records_logic_not_verified,yes,Do we have PrinterL1 include a wireless module? (records)
+log-000005,viessmann,logic,records_logic_not_verified,yes,Do we have ProductV1 use a refrigerant in any component? (records)
+log-000006,battery,logic,records_logic_not_verified,yes,Do we know if ProductA include a wireless module? (datasheet v2)
+log-000007,battery,logic,records_logic_not_verified,no,Iss ProductC linked to any compliance standard?
+log-000008,battery,logic,records_logic_not_verified,no,Do we know if ProductB include a battery component?
+viessmann.kb.logic.01007,viessmann,logic,logic_class_not_derivable,Component,Is Board1 a Component?
+viessmann.kb.logic.01158,viessmann,logic,logic_class_not_derivable,Component,Is Board2 a Component?
+viessmann.kb.logic.01892,viessmann,logic,logic_class_not_derivable,Component,Is Comp1 a Component?
+viessmann.kb.logic.01903,viessmann,logic,logic_class_not_derivable,Component,Is Comp2 a Component?
+viessmann.kb.logic.02033,viessmann,logic,logic_class_not_derivable,Component,Is Radio1 a Component?
+viessmann.kb.recall.00050,viessmann,recall,kb_gold_not_uniquely_supported,Board1,What is the hasComponent of ProductV1?
+viessmann.kb.recall.00107,viessmann,recall,kb_gold_not_uniquely_supported,Component,What is the subClassOf of ElectricalModule?
+viessmann.kb.recall.00117,viessmann,recall,kb_gold_not_uniquely_supported,power output,What is the range of output?
+viessmann.kb.recall.00124,viessmann,recall,kb_gold_not_uniquely_supported,Board2,What is the hasComponent of ProductV2?
+viessmann.kb.recall.00162,viessmann,recall,kb_gold_not_uniquely_supported,Standard,What is the range of requiresCompliance?
+viessmann.kb.recall.00174,viessmann,recall,kb_gold_not_uniquely_supported,LeadMaterial,What is the usesMaterial of Board1?
+viessmann.kb.recall.00302,viessmann,recall,kb_gold_not_uniquely_supported,Product,What is the domain of hasComponent?
+viessmann.kb.recall.00350,viessmann,recall,kb_gold_not_uniquely_supported,Product,What is the domain of requiresStep?
+viessmann.kb.recall.00365,viessmann,recall,kb_gold_not_uniquely_supported,Component,What is the subClassOf of Compressor?
+viessmann.kb.recall.00382,viessmann,recall,kb_gold_not_uniquely_supported,Component,What is the domain of usesRefrigerant?
+viessmann.kb.recall.00410,viessmann,recall,kb_gold_not_uniquely_supported,appliance,What is the domain of output?
+viessmann.kb.recall.00424,viessmann,recall,kb_gold_not_uniquely_supported,Standard,What is the range of conformsTo?
+viessmann.kb.recall.00457,viessmann,recall,kb_gold_not_uniquely_supported,fuel type,What is the range of fuel?
+viessmann.kb.recall.00489,viessmann,recall,kb_gold_not_uniquely_supported,appliance,What is the domain of fuel?
+viessmann.kb.recall.00526,viessmann,recall,kb_gold_not_uniquely_supported,Product,What is the domain of requiresCompliance?
+viessmann.kb.recall.00537,viessmann,recall,kb_gold_not_uniquely_supported,Component,What is the range of hasComponent?
+viessmann.kb.recall.00668,viessmann,recall,kb_gold_not_uniquely_supported,Product,What is the domain of conformsTo?
+viessmann.kb.recall.00689,viessmann,recall,kb_gold_not_uniquely_supported,Component,What is the subClassOf of WirelessModule?
+viessmann.kb.recall.01250,viessmann,recall,kb_gold_not_uniquely_supported,R32,What is the usesRefrigerant of Comp1?
+viessmann.kb.recall.01252,viessmann,recall,kb_gold_not_uniquely_supported,EU F-Gas Regulation,What is the conformsTo of ProductV1?
+viessmann.kb.recall.01283,viessmann,recall,kb_gold_not_uniquely_supported,accessory,What is the range of compatible accessory?
+viessmann.kb.recall.01338,viessmann,recall,kb_gold_not_uniquely_supported,appliance,What is the subClassOf of heat pump?
+viessmann.kb.recall.01410,viessmann,recall,kb_gold_not_uniquely_supported,ProcessStep,What is the range of requiresStep?
+viessmann.kb.recall.01458,viessmann,recall,kb_gold_not_uniquely_supported,appliance,What is the subClassOf of boiler?
+viessmann.kb.recall.01492,viessmann,recall,kb_gold_not_uniquely_supported,Component,What is the domain of usesMaterial?
+viessmann.kb.recall.01712,viessmann,recall,kb_gold_not_uniquely_supported,appliance,What is the domain of compatible accessory?
+viessmann.kb.recall.01726,viessmann,recall,kb_gold_not_uniquely_supported,Material,What is the range of usesMaterial?
+viessmann.kb.recall.01735,viessmann,recall,kb_gold_not_uniquely_supported,Refrigerant,What is the range of usesRefrigerant?
