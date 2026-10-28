@@ -1,0 +1,26 @@
+% Builds standalone PDF backups of the two flowcharts:
+%   pdflatex figs_standalone.tex
+% produces figs_standalone.pdf with one figure per page. Page 1 is the
+% generation flowchart, page 2 the depth-aware flowchart.
+%
+% The same .tex sources are \input directly by main.tex, so the figures in the
+% paper and these backups can never drift apart.
+\documentclass[border=4pt,multi=tikzpicture]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows.meta,positioning,calc,fit,backgrounds}
+\usepackage{amsmath}
+
+% The figures cite; standalone has no bibliography, so render the keys as the
+% numbers they carry in the paper.
+\renewcommand{\cite}[1]{[\,\ref{#1}\,]}
+\makeatletter
+\def\@currentlabel{}
+\makeatother
+\newcommand{\fakelabel}[2]{\expandafter\def\csname r@#1\endcsname{{#2}{1}}}
+\fakelabel{esfarealam2025synthdpp}{9}
+\fakelabel{owlrl2012}{10}
+
+\begin{document}
+\input{fig_genflow}
+\input{fig_depthflow}
+\end{document}

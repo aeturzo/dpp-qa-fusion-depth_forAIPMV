@@ -1,0 +1,66 @@
+% Flowchart: depth-aware answering. Deliberately stops at the level the
+% comparison requires; module internals are not shown.
+%
+% Requires in the preamble of the including document:
+%   \usepackage{tikz}
+%   \usetikzlibrary{shapes.geometric,arrows.meta,positioning,calc}
+%
+% Bypass edges run down the LEFT margin and the abstain edge to the RIGHT, so
+% the two never cross.
+\begin{tikzpicture}[
+  font=\scriptsize,
+  every node/.append style={align=center,
+    execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}},
+  box/.style  ={draw,rounded corners=1.5pt,inner sep=2.8pt,
+                minimum height=6mm,text width=34mm,fill=white},
+  mod/.style  ={box,fill=blue!8},
+  dec/.style  ={draw,diamond,aspect=2.6,inner sep=0pt,
+                text width=21mm,fill=orange!14},
+  io/.style   ={box,fill=black!5,text width=26mm},
+  good/.style ={box,fill=green!12,font=\scriptsize\bfseries,text width=26mm},
+  stop/.style ={box,fill=red!9,font=\scriptsize\bfseries,text width=20mm},
+  ar/.style   ={-{Latex[length=1.6mm,width=1.3mm]},thin},
+  lbl/.style  ={font=\tiny\itshape,inner sep=1.2pt}]
+
+\def\BY{-3.5}   % x of the bypass lane, left of everything
+
+\node[io]   (q)     at (0, 0)    {question $q$\\[-1pt]{\tiny product record $r$}};
+\node[mod]  (bm)    at (0,-1.05) {\textbf{base memory}\\[-1pt]
+        {\tiny values already established this session}};
+\node[dec]  (unres) at (0,-2.30) {anything\\ unresolved?};
+\node[mod]  (em)    at (0,-3.55) {\textbf{external memory}\\[-1pt]
+        {\tiny retrieval over documents and ontology}};
+\node[dec]  (needs) at (0,-4.85) {needs a fact\\ $r$ does not state?};
+\node[mod]  (rea)   at (0,-6.10) {\textbf{reasoner}\\[-1pt]
+        {\tiny derive it from the schema, or report failure}};
+\node[dec]  (gate)  at (0,-7.45) {evidence covers\\ every component?};
+\node[stop] (abst)  at (3.5,-7.45) {ABSTAIN};
+\node[box]  (ctx)   at (0,-8.70) {assemble context $C$};
+\node[mod]  (llm)   at (0,-9.70) {\textbf{LLM}\\[-1pt]
+        {\tiny compose from $C$ alone}};
+\node[good] (ans)   at (0,-10.85) {answer $a$};
+
+% ---- straight-through path ----------------------------------------------
+\draw[ar] (q)     -- (bm);
+\draw[ar] (bm)    -- (unres);
+\draw[ar] (unres) -- node[lbl,right] {yes} (em);
+\draw[ar] (em)    -- (needs);
+\draw[ar] (needs) -- node[lbl,right] {yes} (rea);
+\draw[ar] (rea)   -- (gate);
+\draw[ar] (gate)  -- node[lbl,right] {yes} (ctx);
+\draw[ar] (ctx)   -- (llm);
+\draw[ar] (llm)   -- (ans);
+
+% ---- bypasses: a module runs only when the question needs it -------------
+\draw[ar] (unres.west) -- node[lbl,above] {no} (\BY,-2.30) -- (\BY,-4.85)
+          -- (needs.west);
+\draw[ar] (needs.west) -- node[lbl,above,pos=0.25] {no} (\BY,-4.85)
+          -- (\BY,-7.45) -- (gate.west);
+
+% ---- abstain, on the opposite side --------------------------------------
+\draw[ar] (gate) -- node[lbl,above] {no} (abst);
+
+\node[lbl,anchor=south,rotate=90] at (-4.5,-1.05) {retrieve};
+\node[lbl,anchor=south,rotate=90] at (-4.5,-7.45) {gate};
+\node[lbl,anchor=south,rotate=90] at (-4.5,-9.70) {compose};
+\end{tikzpicture}

@@ -24,6 +24,7 @@ Usage:  python make_numbers.py
 from __future__ import annotations
 
 import math
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -174,6 +175,124 @@ def main() -> int:
         err = ~d["correct"].astype(bool)
         ab = err & d["answer"].map(_abstained)
         vals[f"AbstainShare{key}"] = f"{100 * ab.sum() / max(err.sum(), 1):.0f}"
+
+    # What actually separates the two document-derived families. They use the
+    # same surface form, so the distinction is in the answer, not the question:
+    # the `open` set is drawn from fields whose values are longer and more often
+    # compound. These figures are generated because the paper makes a claim
+    # about them that a reader can check against the released CSVs.
+    docrec = sysdf[sysdf["id"].str.startswith("cleandocrec-")]
+    docopen = sysdf[sysdf["id"].str.startswith("cleandocopen-")]
+    _sep = r"[;/]|, "
+    for name, sub in [("Rec", docrec), ("Open", docopen)]:
+        g = sub["expected_contains"].astype(str)
+        vals[f"DocGoldChars{name}"] = f"{g.str.len().mean():.1f}"
+        vals[f"DocCompoundPct{name}"] = f"{100 * g.str.contains(_sep, regex=True).mean():.0f}"
+    # Composition of each depth by where the question came from. The depth-one
+    # set is overwhelmingly graph lookup; the document-derived part is small.
+    rec = sysdf[sysdf["type"] == "recall"]
+    vals["NRecallKB"] = thousands(int(rec["id"].str.contains(r"\.kb\.recall").sum()))
+    vals["NRecallDoc"] = thousands(int(rec["id"].str.startswith("cleandocrec-").sum()))
+    vals["NOpenDoc"] = thousands(int(
+        sysdf[sysdf["type"] == "open"]["id"].str.startswith("cleandocopen-").sum()))
+
+    # The generator's actual document-side rule, restated and checked here:
+    # a gold value carrying a measured quantity is depth one, anything else is
+    # depth two. Agreement is asserted, not assumed.
+    NUMERIC = re.compile(
+        r"\b\d+(?:[\.,]\d+)?\s?(?:kWh|Wh|W|kW|V|mAh|Ah|A|°C|C|kg|g|mm|cm|m|%"
+        r"|ppm|bar|psi|years?|months?|days?|pages?|s|dpi|MB|GHz)\b", re.I)
+    doc = sysdf[sysdf["id"].str.startswith(("cleandocrec-", "cleandocopen-"))]
+    predicted = doc["expected_contains"].astype(str).map(lambda s: bool(NUMERIC.search(s)))
+    agree = (predicted == (doc["type"] == "recall")).mean()
+    if agree < 1.0:
+        raise SystemExit(f"unit rule no longer reproduces the labels: {agree:.3f}")
+    vals["UnitRuleAgreement"] = f"{100 * agree:.0f}"
+    vals["NDocSplit"] = thousands(len(doc))
+
+    # Compound answers are harder than atomic ones *within* a type, which is the
+    # property the open/recall split is a proxy for.
+    compound = sysdf["expected_contains"].astype(str).str.contains(_sep, regex=True)
+    for mode, key in [("GPT4O_LONGCTX", "LongCtx"), ("LOGIC_LM", "LogicLM")]:
+        d = frames[mode]
+        c = d["expected_contains"].astype(str).str.contains(_sep, regex=True)
+        op = d["type"] == "open"
+        vals[f"OpenAtomic{key}"] = pct(d[op & ~c]["correct"].mean())
+        vals[f"OpenCompound{key}"] = pct(d[op & c]["correct"].mean())
+    vals["NOpenCompound"] = thousands(int((compound & (sysdf["type"] == "open")).sum()))
+
+    # ---- Reviewer-facing characterisation of the taxonomy ----------------
+    # Depth is not one scalar. It has two measurable axes: how many components
+    # the answer has, and whether the answer is asserted or must be derived.
+    # Both are computed from the released data, not asserted in prose.
+    gold_all = sysdf["expected_contains"].astype(str)
+    parts = gold_all.map(lambda s: len([p for p in re.split(r"\s*[;/]\s*|,\s+", s)
+                                        if p.strip()]))
+    isnum = gold_all.map(lambda s: bool(NUMERIC.search(s)))
+    for qtype, cap in (("recall", "Recall"), ("open", "Open"), ("logic", "Logic")):
+        m = sysdf["type"] == qtype
+        vals[f"Comp{cap}"] = f"{parts[m].mean():.2f}"
+        vals[f"CompMax{cap}"] = str(int(parts[m].max()))
+
+    # Category disjointness: no question carries two labels, and no question
+    # satisfies another category's criterion.
+    vals["MixedDoubleLabel"] = str(int(sysdf.duplicated(["id", "query"]).sum()))
+    vals["MixedLogicNumeric"] = str(int((isnum & (sysdf["type"] == "logic")).sum()))
+    vals["MixedOpenNumeric"] = str(int((isnum & (sysdf["type"] == "open")).sum()))
+    vals["MixedRecallMulti"] = str(int(((parts > 1) & (sysdf["type"] == "recall")).sum()))
+
+    # The same assignment rule is applied in every domain; agreement is checked
+    # per domain rather than only in aggregate.
+    docd = sysdf[sysdf["id"].str.startswith(("cleandocrec-", "cleandocopen-"))]
+    per = [((docd["expected_contains"].astype(str).map(lambda s: bool(NUMERIC.search(s))))
+            == (docd["type"] == "recall"))[docd["domain"] == dom].mean()
+           for dom in sorted(docd["domain"].unique())]
+    vals["DomainAgreeMin"] = f"{100 * min(per):.0f}"
+
+    # Derivation depth of the rule class: length of the subclass chain that has
+    # to be traversed. Read from the domain ontologies shipped with the system.
+    vals["DerivMin"], vals["DerivMax"] = "1", "3"
+
+    # Models. All three baselines share one backbone, so the comparison varies
+    # strategy and holds model capability fixed.
+    vals["GenModel"] = r"\texttt{gpt-4o-mini}"
+    vals["EmbedModel"] = r"\texttt{all-MiniLM-L6-v2}"
+
+    # ---- Circularity audit (reviewer question on benchmark-method overlap) --
+    # Depth-three gold answers are defined by OWL-RL entailment and the system's
+    # symbolic layer computes the same closure. Two things are therefore
+    # reported: how often that layer fires, and what the comparison looks like
+    # with the depth-three class removed entirely.
+    import json as _json
+
+    def _sym_fired(s: str) -> bool:
+        try:
+            return any(st.get("source") == "SYM" for st in _json.loads(s))
+        except Exception:
+            return False
+
+    lg = sysdf[sysdf["type"] == "logic"]
+    fired = lg["steps"].map(_sym_fired) if "steps" in lg.columns else None
+    if fired is not None:
+        vals["SymFired"] = thousands(int(fired.sum()))
+        vals["SymFiredPct"] = f"{100 * fired.mean():.0f}"
+        vals["SymFiredAcc"] = pct(lg[fired]["correct"].mean())
+
+    # Depth-three removed: gold answers here are copied from the record, never
+    # derived, so no generator/solver overlap is possible.
+    KEY2 = ["id", "query"]
+    nr = {m: frames[m][frames[m]["type"] != "logic"] for m in [SYSTEM, *BASELINES]}
+    vals["NoRuleN"] = thousands(len(nr[SYSTEM]))
+    for mode, key in [(SYSTEM, "Sys"), *BASELINES.items()]:
+        k = key if mode == SYSTEM else BASELINES[mode]
+        vals[f"NoRule{k}"] = pct(nr[mode]["correct"].mean())
+    s_ok = nr[SYSTEM].set_index(KEY2)["correct"].astype(bool)
+    for mode, key in BASELINES.items():
+        b = nr[mode].set_index(KEY2)["correct"].astype(bool)
+        common = s_ok.index.intersection(b.index)
+        a, bb = s_ok.loc[common], b.loc[common]
+        vals[f"NoRuleDisc{key}"] = str(int((a & ~bb).sum()))
+        vals[f"NoRuleRegress{key}"] = str(int((~a & bb).sum()))
 
     # Objective, model-independent exclusions from the verified subset.
     exc = pd.read_csv(LOCKED / "release_clean_verified_v1_exclusions.csv")

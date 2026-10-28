@@ -1,0 +1,90 @@
+% Flowchart: automated question generation with verified gold answers.
+% Contains only a tikzpicture, so it can be \input into the paper. For a
+% standalone PDF backup, compile figs_standalone.tex.
+%
+% Requires in the preamble of the including document:
+%   \usepackage{tikz}
+%   \usetikzlibrary{shapes.geometric,arrows.meta,positioning,calc}
+%
+% Coordinates are explicit rather than relative: the two tracks (documents on
+% the left, ontology on the right) must stay aligned, and `positioning' chains
+% drift when a box changes size.
+\begin{tikzpicture}[
+  font=\scriptsize,
+  % No hyphenation anywhere: the boxes are narrow and broken words
+  % ("clo-sure", "veri-fied") read badly in a figure.
+  every node/.append style={align=center,
+    execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}},
+  box/.style  ={draw,rounded corners=1.5pt,inner sep=2.8pt,
+                minimum height=6mm,text width=30mm,fill=white},
+  src/.style  ={box,fill=black!5},
+  gen/.style  ={box,fill=blue!8},
+  dec/.style  ={draw,diamond,aspect=2.6,inner sep=0pt,
+                text width=19mm,fill=orange!14},
+  res/.style  ={box,fill=green!12,font=\scriptsize\bfseries,text width=32mm},
+  drop/.style ={box,fill=red!8,text width=27mm},
+  ar/.style   ={-{Latex[length=1.6mm,width=1.3mm]},thin},
+  lbl/.style  ={font=\tiny\itshape,inner sep=1.2pt}]
+
+\def\xL{-3.25}   % left  track x
+\def\xR{ 3.25}   % right track x
+
+% ---- source --------------------------------------------------------------
+\node[src] (bom)  at (0, 0)     {Bills of materials from\\ CE\nobreakdash-RISE partners};
+\node[src] (norm) at (0,-1.15)  {Normalise to DPP records\\[-1pt]
+                                 {\tiny fixed vocabulary, units, IDs~\cite{esfarealam2025synthdpp}}};
+
+% ---- two renderings of the same product ----------------------------------
+\node[src] (doc) at (\xL,-2.35) {Passport documents};
+\node[src] (ont) at (\xR,-2.35) {OWL/RDF ontology $G_0$};
+
+% ---- ontology track ------------------------------------------------------
+\node[gen] (clo) at (\xR,-3.55) {OWL\nobreakdash-RL closure $G$~\cite{owlrl2012}};
+\node[dec] (ent) at (\xR,-4.75) {entailed \emph{and}\\ \emph{not} asserted?};
+
+% ---- generators ----------------------------------------------------------
+\node[gen] (gopen) at (\xL,-3.55) {\textbf{open}\\[-1pt]
+        {\tiny gold is \emph{not} a measured quantity}\\[-2pt]
+        {\tiny gold: every part of the value}};
+\node[gen,text width=26mm] (grec)  at (0,-3.55) {\textbf{recall}\\[-1pt]
+        {\tiny gold \emph{is} a measured quantity}\\[-2pt]
+        {\tiny gold: the stated value}};
+\node[gen] (gsch)  at (\xR,-6.05) {\textbf{schema}\\[-1pt]
+        {\tiny ``Is $s$ a $C$?''}\\[-2pt]
+        {\tiny gold: $\mathrm{label}(C)$, by entailment}};
+
+% ---- filters -------------------------------------------------------------
+\node[box,text width=52mm] (filt) at (0,-7.15)
+        {cap 6 questions per subject\ \ $\cdot$\ \ drop duplicates on $(q,\text{gold})$};
+\node[dec] (ver)  at (0,-8.35) {gold uniquely\\ supported?};
+\node[drop] (excl) at (3.6,-8.35) {\textbf{645 excluded}\\[-1pt]
+        {\tiny 8 recorded reasons, published}};
+\node[res] (fin)  at (0,-9.6) {6{,}270 verified questions};
+
+% ---- edges ---------------------------------------------------------------
+\draw[ar] (bom) -- (norm);
+\draw[ar] (norm.south) -- ++(0,-0.25) -| (doc.north);
+\draw[ar] (norm.south) -- ++(0,-0.25) -| (ont.north);
+
+\draw[ar] (doc) -- (gopen);                           % no unit in gold
+\draw[ar] (doc.south) -- ++(0,-0.3) -| (grec.north);  % unit in gold
+\draw[ar] (ont.south) -- ++(0,-0.3) -| (grec.north);  % asserted triples
+\draw[ar] (ont) -- (clo);
+\draw[ar] (clo) -- (ent);
+\draw[ar] (ent) -- node[lbl,right] {yes} (gsch);
+\draw[ar] (ent.east) -- ++(0.55,0) node[lbl,above right,anchor=west]
+          {no: already stated};
+
+\draw[ar] (gopen.south) |- ($(filt.west)+(-0.0,0)$);
+\draw[ar] (grec.south)  -- (filt.north);
+\draw[ar] (gsch.south)  |- (filt.east);
+
+\draw[ar] (filt) -- (ver);
+\draw[ar] (ver)  -- node[lbl,above] {no}  (excl);
+\draw[ar] (ver)  -- node[lbl,right] {yes} (fin);
+
+% ---- stage labels --------------------------------------------------------
+\node[lbl,anchor=south,rotate=90] at (-5.2,-1.15) {source};
+\node[lbl,anchor=south,rotate=90] at (-5.2,-4.75) {generate};
+\node[lbl,anchor=south,rotate=90] at (-5.2,-8.35) {filter and verify};
+\end{tikzpicture}
