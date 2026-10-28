@@ -22,10 +22,15 @@ Every number in the paper matches the released data.
 ## What the paper claims
 
 Questions are grouped by **fusion depth** — how many kinds of source an answer
-must combine. Depth one is a value stated in the record; depth two must be
-assembled from several parts of it; depth three needs a record value *and* the
-schema that classifies it — for example, whether a named component is an
-instance of a declared product class.
+must combine. Depth one is a single stated value; depth two is a stated but
+*compound* value whose parts must all be reproduced; depth three is not stated
+at all — it follows from a stated value plus the class hierarchy, by entailment.
+
+Note that on the document side the depth-one/depth-two split is decided by a
+mechanical test on the **gold value** — a number followed by a unit is depth
+one, anything else is depth two — and reproduces the published labels for 100%
+of those rows. It is a proxy rather than a definition; `docs/METHOD.md` states
+the rule and its limits.
 
 | configuration | recall | open | schema | overall |
 |---|---:|---:|---:|---:|
@@ -83,8 +88,25 @@ data/public_schema/     4,021-query arm over Open Food Facts (summary level)
 data/examples/          the single compositional question quoted in Table II
 scripts/verify_all.py   recompute every reported number and check it
 scripts/analysis_clean.py   re-report under stricter grading
+scripts/generate_schema_questions.py   reference implementation of the generator
+docs/METHOD.md          how the benchmark was built, and a sketch of the
+                        configuration under study
 paper/                  the generated macro file, tables and figure
 CHECKSUMS.md            SHA-256 of every data file, and the withheld columns
+```
+
+## How the questions were made
+
+No language model takes part in producing a question or a gold answer: every
+gold value is either copied from the source record or derived by an OWL-RL
+reasoner. Depth-three questions are generated **only** where a type assertion is
+entailed by the ontology but not asserted in it, so the answer is not written
+anywhere in the record. `docs/METHOD.md` documents the full pipeline, and the
+step that matters is runnable:
+
+```bash
+pip install rdflib owlrl
+python scripts/generate_schema_questions.py
 ```
 
 ## Joining these files correctly

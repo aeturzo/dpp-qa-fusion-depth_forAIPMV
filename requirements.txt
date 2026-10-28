@@ -1,3 +1,7 @@
-# Only pandas is needed. Versions are lower bounds, not pins: the scripts use
-# stable API only, and verify_all.py will tell you immediately if anything drifts.
+# Core: verify_all.py and analysis_clean.py need only pandas.
 pandas>=1.5
+
+# Optional: needed only by scripts/generate_schema_questions.py, the reference
+# implementation of the entailment-based question generator.
+rdflib>=7.0
+owlrl>=6.0
